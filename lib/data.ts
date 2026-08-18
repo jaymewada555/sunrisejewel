@@ -18,6 +18,7 @@ export type Product = {
   metal: Metal;
   occasion: Occasion;
   image: string;
+  price: string;
   blurb: string;
 };
 
@@ -38,7 +39,8 @@ export const products: Product[] = [
     category: "Rings",
     metal: "Platinum",
     occasion: "Bridal",
-    image: "/images/prod-ring-1.jpg",
+    image: "/images/products/aurora-solitaire-ring.jpg",
+    price: "₹68,500",
     blurb: "A round brilliant solitaire set in a hand-finished platinum band.",
   },
   {
@@ -47,7 +49,8 @@ export const products: Product[] = [
     category: "Rings",
     metal: "Rose Gold",
     occasion: "Statement",
-    image: "/images/prod-ring-2.jpg",
+    image: "/images/products/meridian-halo-ring.jpg",
+    price: "₹42,900",
     blurb: "A dense diamond halo that amplifies every angle of light.",
   },
   {
@@ -56,7 +59,8 @@ export const products: Product[] = [
     category: "Bracelets",
     metal: "White Gold",
     occasion: "Everyday",
-    image: "/images/prod-bracelet-1.jpg",
+    image: "/images/products/featherline-tennis-bracelet.jpg",
+    price: "₹57,400",
     blurb: "Featherlight enough for daily wear, brilliant enough for evenings.",
   },
   {
@@ -65,7 +69,8 @@ export const products: Product[] = [
     category: "Bracelets",
     metal: "Yellow Gold",
     occasion: "Statement",
-    image: "/images/prod-bracelet-2.jpg",
+    image: "/images/products/kada-heritage-bracelet.jpg",
+    price: "₹31,200",
     blurb: "A modern kada silhouette pavé-set edge to edge.",
   },
   {
@@ -74,7 +79,8 @@ export const products: Product[] = [
     category: "Necklaces",
     metal: "Rose Gold",
     occasion: "Gifting",
-    image: "/images/prod-necklace-1.jpg",
+    image: "/images/products/dewdrop-pendant-necklace.jpg",
+    price: "₹18,900",
     blurb: "A single drop diamond suspended on a fine rose gold chain.",
   },
   {
@@ -83,7 +89,8 @@ export const products: Product[] = [
     category: "Necklaces",
     metal: "White Gold",
     occasion: "Bridal",
-    image: "/images/prod-necklace-2.jpg",
+    image: "/images/products/cascade-choker-necklace.jpg",
+    price: "₹44,600",
     blurb: "Layered diamond cascades designed for the bridal table.",
   },
   {
@@ -92,7 +99,8 @@ export const products: Product[] = [
     category: "Earrings",
     metal: "Yellow Gold",
     occasion: "Everyday",
-    image: "/images/prod-earring-1.jpg",
+    image: "/images/products/lumina-oval-hoops.jpg",
+    price: "₹79,500",
     blurb: "Oval hoops set with a continuous line of round brilliants.",
   },
   {
@@ -101,7 +109,8 @@ export const products: Product[] = [
     category: "Earrings",
     metal: "Platinum",
     occasion: "Bridal",
-    image: "/images/prod-earring-2.jpg",
+    image: "/images/products/veil-drop-earrings.jpg",
+    price: "₹67,100",
     blurb: "Movement-designed drops that catch light with every turn.",
   },
   {
@@ -110,7 +119,8 @@ export const products: Product[] = [
     category: "Bangles",
     metal: "Yellow Gold",
     occasion: "Statement",
-    image: "/images/prod-bangle-1.jpg",
+    image: "/images/products/sunray-bangle-set.jpg",
+    price: "₹89,400",
     blurb: "A set of three bangles inspired by our own sunburst mark.",
   },
   {
@@ -119,7 +129,8 @@ export const products: Product[] = [
     category: "Nosepins",
     metal: "Rose Gold",
     occasion: "Everyday",
-    image: "/images/prod-nosepin-1.jpg",
+    image: "/images/products/estelle-nosepin.jpg",
+    price: "₹14,900",
     blurb: "A single brilliant-cut stone set low for everyday comfort.",
   },
   {
@@ -128,7 +139,8 @@ export const products: Product[] = [
     category: "Anklets",
     metal: "White Gold",
     occasion: "Gifting",
-    image: "/images/prod-anklet-1.jpg",
+    image: "/images/products/tidal-anklet.jpg",
+    price: "₹27,600",
     blurb: "A delicate diamond-studded chain with a gentle wave motif.",
   },
   {
@@ -137,7 +149,8 @@ export const products: Product[] = [
     category: "Earrings",
     metal: "Rose Gold",
     occasion: "Gifting",
-    image: "/images/prod-earring-3.jpg",
+    image: "/images/products/wren-stud-earrings.jpg",
+    price: "₹14,200",
     blurb: "Everyday studs with a soft floral silhouette.",
   },
 ];

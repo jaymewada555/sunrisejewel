@@ -40,7 +40,7 @@ const slides = [
     stats: [
       {
         icon: Gem,
-        title: "Certified Diamonds",
+        title: "Diamond Quality",
         text: "Exceptional brilliance",
       },
       {

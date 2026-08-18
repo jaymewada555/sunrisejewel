@@ -1,11 +1,11 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { MessageCircle, Sparkles, X } from "lucide-react";
 import { useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { MessageCircle, X } from "lucide-react";
+import Reveal from "@/components/Reveal";
 import { products, categories, type Category, type Metal, type Occasion } from "@/lib/data";
-import { categoryIcon } from "@/components/JewelIcons";
-import ArtPanel from "@/components/ArtPanel";
 
 const metals: Metal[] = ["Yellow Gold", "Rose Gold", "White Gold", "Platinum"];
 const occasions: Occasion[] = ["Bridal", "Everyday", "Gifting", "Statement"];
@@ -22,11 +22,7 @@ function FilterPill({
   return (
     <button
       onClick={onClick}
-      className={`px-4 py-1.5 text-xs tracking-wide border transition-colors ${
-        active
-          ? "bg-maroon border-maroon text-cream"
-          : "border-line text-ink-soft hover:border-maroon hover:text-maroon"
-      }`}
+      className={`catalog-filter-pill ${active ? "active" : ""}`}
     >
       {label}
     </button>
@@ -56,103 +52,152 @@ export default function ProductsExplorer() {
   const hasActiveFilters = category !== "All" || metal !== "All" || occasion !== "All";
 
   return (
-    <section className="section">
+    <section className="catalog-page section">
       <div className="container-lg">
-        <div className="border border-line p-6 md:p-7 mb-12">
-          <div className="flex items-center justify-between mb-5">
-            <span className="eyebrow">Filter</span>
-            {hasActiveFilters && (
-              <button
-                onClick={() => {
-                  setCategory("All");
-                  setMetal("All");
-                  setOccasion("All");
-                }}
-                className="flex items-center gap-1 text-xs text-maroon hover:text-maroon-deep"
-              >
-                <X className="w-3.5 h-3.5" /> Clear all
-              </button>
-            )}
+        <Reveal className="catalog-toolbar">
+          <div className="catalog-toolbar-inner">
+            <div className="flex items-center justify-between gap-4 mb-5">
+              <span className="eyebrow text-maroon-soft">Filter</span>
+              {hasActiveFilters && (
+                <button
+                  onClick={() => {
+                    setCategory("All");
+                    setMetal("All");
+                    setOccasion("All");
+                  }}
+                  className="flex items-center gap-1 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-maroon hover:text-maroon-deep"
+                >
+                  <X className="w-3.5 h-3.5" /> Clear all
+                </button>
+              )}
+            </div>
+
+            <div className="catalog-filter-stack">
+              <div>
+                <p className="catalog-filter-label">Category</p>
+                <div className="catalog-filter-group">
+                  <FilterPill label="All" active={category === "All"} onClick={() => setCategory("All")} />
+                  {categories.map((c) => (
+                    <FilterPill
+                      key={c.name}
+                      label={c.name}
+                      active={category === c.name}
+                      onClick={() => setCategory(c.name)}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="catalog-filter-label">Metal</p>
+                <div className="catalog-filter-group">
+                  <FilterPill label="All" active={metal === "All"} onClick={() => setMetal("All")} />
+                  {metals.map((m) => (
+                    <FilterPill key={m} label={m} active={metal === m} onClick={() => setMetal(m)} />
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <p className="catalog-filter-label">Occasion</p>
+                <div className="catalog-filter-group">
+                  <FilterPill label="All" active={occasion === "All"} onClick={() => setOccasion("All")} />
+                  {occasions.map((o) => (
+                    <FilterPill key={o} label={o} active={occasion === o} onClick={() => setOccasion(o)} />
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
+        </Reveal>
 
-          <div className="space-y-5">
-            <div>
-              <p className="text-xs text-ink-soft mb-2.5">Category</p>
-              <div className="flex flex-wrap gap-2.5">
-                <FilterPill label="All" active={category === "All"} onClick={() => setCategory("All")} />
-                {categories.map((c) => (
-                  <FilterPill
-                    key={c.name}
-                    label={c.name}
-                    active={category === c.name}
-                    onClick={() => setCategory(c.name)}
-                  />
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <p className="text-xs text-ink-soft mb-2.5">Metal</p>
-              <div className="flex flex-wrap gap-2.5">
-                <FilterPill label="All" active={metal === "All"} onClick={() => setMetal("All")} />
-                {metals.map((m) => (
-                  <FilterPill key={m} label={m} active={metal === m} onClick={() => setMetal(m)} />
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <p className="text-xs text-ink-soft mb-2.5">Occasion</p>
-              <div className="flex flex-wrap gap-2.5">
-                <FilterPill label="All" active={occasion === "All"} onClick={() => setOccasion("All")} />
-                {occasions.map((o) => (
-                  <FilterPill key={o} label={o} active={occasion === o} onClick={() => setOccasion(o)} />
-                ))}
-              </div>
-            </div>
-          </div>
+        <div className="catalog-meta">
+          <p className="text-sm text-ink-soft">
+            Showing {filtered.length} {filtered.length === 1 ? "piece" : "pieces"}
+          </p>
         </div>
 
-        <p className="text-sm text-ink-soft mb-6">
-          Showing {filtered.length} {filtered.length === 1 ? "piece" : "pieces"}
-        </p>
-
         {filtered.length === 0 ? (
-          <div className="text-center py-20 border border-dashed border-line">
-            <p className="text-ink-soft text-sm">
-              No pieces match those filters yet. Try clearing a filter, or message
-              us — we likely have it in the workshop.
+          <div className="empty-state">
+            <p>
+              No pieces match those filters yet. Try clearing a filter, or message us —
+              we likely have it in the workshop.
             </p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
-            {filtered.map((p) => {
-              const Icon = categoryIcon[p.category];
-              const waMessage = `Hi Sunrise Diamond & Jewels, I'd like to enquire about the ${p.name} (${p.metal}).`;
+          <div className="catalog-grid">
+            {filtered.map((product, index) => {
+              const waMessage = `Hi Sunrise Diamond & Jewels, I'd like to enquire about the ${product.name} (${product.metal}).`;
+
               return (
-                <div key={p.id} className="group border border-line hover:border-gold transition-colors">
-                  <ArtPanel icon={Icon} tone="cream" className="aspect-square" />
-                  <div className="p-5">
-                    <span className="text-[0.65rem] tracking-[0.2em] uppercase text-gold">
-                      {p.metal} · {p.occasion}
-                    </span>
-                    <h3 className="font-display text-lg text-ink mt-1.5">{p.name}</h3>
-                    <p className="text-sm text-ink-soft mt-1.5 leading-relaxed">{p.blurb}</p>
-                    <a
-                      href={`https://wa.me/917021811747?text=${encodeURIComponent(waMessage)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-5 flex items-center justify-center gap-2 w-full py-2.5 border border-[#25D366] text-[#128C4A] text-xs tracking-wide uppercase hover:bg-[#25D366] hover:text-white transition-colors"
-                    >
-                      <MessageCircle className="w-4 h-4" strokeWidth={1.8} />
-                      Enquire on WhatsApp
-                    </a>
-                  </div>
-                </div>
+                <Reveal key={product.id} delay={index * 0.04} className="h-full">
+                  <motion.article
+                    whileHover={{ y: -8, scale: 1.01 }}
+                    transition={{ type: "spring", stiffness: 220, damping: 20 }}
+                    className="product-card group"
+                  >
+                    <div className="product-media">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-white/15" />
+                    </div>
+
+                    <div className="product-body">
+                      <div className="product-topline">
+                        <span className="product-spec">
+                          {product.category.toUpperCase()} · {product.metal}
+                        </span>
+                        <span className="product-badge">New</span>
+                      </div>
+
+                      <h3 className="font-display text-[1.7rem] leading-none text-ink mt-3">
+                        {product.name}
+                      </h3>
+
+                      <p className="text-sm text-ink-soft mt-2 leading-relaxed">
+                        {product.blurb}
+                      </p>
+
+                      <div className="product-footer">
+                        <span className="product-price">{product.price}</span>
+                        <a
+                          href={`https://wa.me/917021811747?text=${encodeURIComponent(waMessage)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="product-action"
+                        >
+                          <MessageCircle className="w-4 h-4" strokeWidth={1.8} />
+                          Enquire
+                        </a>
+                      </div>
+                    </div>
+                  </motion.article>
+                </Reveal>
               );
             })}
           </div>
         )}
+
+        <Reveal className="custom-design-banner">
+          <div className="custom-design-inner">
+            <div className="flex flex-col items-center text-center">
+              <Sparkles className="w-5 h-5 text-maroon-soft mb-3" />
+              <h3 className="font-display text-[2.2rem] md:text-[2.7rem] leading-none text-ink">
+                Can&apos;t find exactly what you imagined?
+              </h3>
+              <p className="mt-3 max-w-2xl text-sm text-ink-soft">
+                We custom-design every piece to match your story, setting, and budget.
+              </p>
+              <a href="/book-us" className="btn-primary mt-6">
+                Start a custom design
+              </a>
+            </div>
+          </div>
+        </Reveal>
+
       </div>
     </section>
   );

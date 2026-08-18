@@ -111,7 +111,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-cream/55">
           <p>© {new Date().getFullYear()} Sunrise Diamond &amp; Jewels Pvt Ltd. All rights reserved.</p>
-          <p className="tracking-wide">Certified Diamonds · Free Shipping · Easy Returns</p>
+          <p className="tracking-wide">Fine jewellery for life&apos;s most cherished moments</p>
         </div>
       </div>
     </footer>

@@ -49,10 +49,7 @@ function getProductImage(name: string, category: string) {
   }
 
   // Emerald jewellery
-  if (
-    text.includes("emerald") ||
-    text.includes("green")
-  ) {
+  if (text.includes("emerald") || text.includes("green")) {
     return {
       src: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1000&q=90",
       alt: `${name} emerald jewellery`,
@@ -60,10 +57,7 @@ function getProductImage(name: string, category: string) {
   }
 
   // Engagement ring
-  if (
-    text.includes("engagement") ||
-    text.includes("proposal")
-  ) {
+  if (text.includes("engagement") || text.includes("proposal")) {
     return {
       src: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1000&q=90",
       alt: `${name} engagement ring`,
@@ -127,7 +121,9 @@ export default function FeaturedProducts() {
   return (
     <section className="section bg-blush/50 relative overflow-hidden">
 
-      {/* Background decoration */}
+      {/* =====================================================
+          BACKGROUND DECORATION
+      ====================================================== */}
 
       <div
         className="
@@ -231,16 +227,34 @@ export default function FeaturedProducts() {
 
         {/* =====================================================
             PRODUCTS
+            MOBILE  = HORIZONTAL SLIDER
+            DESKTOP = ORIGINAL GRID
         ====================================================== */}
 
         <div
           className="
-            grid
-            grid-cols-1
+            flex
+            gap-5
+            overflow-x-auto
+            snap-x
+            snap-mandatory
+            -mx-4
+            px-4
+            pb-5
+
+            sm:mx-0
+            sm:px-0
+            sm:grid
             sm:grid-cols-2
+            sm:gap-6
+
             lg:grid-cols-4
-            gap-6
             md:gap-7
+
+            sm:overflow-visible
+            sm:pb-0
+
+            scrollbar-hide
           "
         >
 
@@ -255,13 +269,21 @@ export default function FeaturedProducts() {
               <Reveal
                 key={p.id}
                 delay={i * 0.08}
+                className="
+                  shrink-0
+                  w-[84%]
+                  snap-start
+
+                  sm:w-auto
+                  sm:shrink
+                "
               >
 
                 <Link
                   href={`/products?category=${encodeURIComponent(
                     p.category
                   )}`}
-                  className="group block"
+                  className="group block w-full"
                 >
 
                   {/* =================================================
@@ -278,6 +300,7 @@ export default function FeaturedProducts() {
                       shadow-[0_8px_30px_rgba(63,12,21,0.07)]
                       transition-all
                       duration-700
+
                       group-hover:-translate-y-2
                       group-hover:shadow-[0_20px_45px_rgba(63,12,21,0.15)]
                     "
@@ -487,6 +510,8 @@ export default function FeaturedProducts() {
                       {p.blurb}
                     </p>
 
+                    {/* View Details */}
+
                     <div
                       className="
                         flex
@@ -502,6 +527,7 @@ export default function FeaturedProducts() {
                         group-hover:gap-4
                       "
                     >
+
                       <span>
                         View Details
                       </span>
@@ -515,6 +541,7 @@ export default function FeaturedProducts() {
                           group-hover:translate-x-1
                         "
                       />
+
                     </div>
 
                   </div>
@@ -529,13 +556,47 @@ export default function FeaturedProducts() {
 
 
         {/* =====================================================
+            MOBILE SLIDER HINT
+        ====================================================== */}
+
+        <div
+          className="
+            flex
+            sm:hidden
+            items-center
+            justify-center
+            gap-3
+            mt-6
+            text-ink-soft/50
+          "
+        >
+
+          <span className="h-px w-8 bg-line" />
+
+          <span
+            className="
+              text-[9px]
+              uppercase
+              tracking-[0.22em]
+            "
+          >
+            Swipe to discover
+          </span>
+
+          <span className="h-px w-8 bg-line" />
+
+        </div>
+
+
+        {/* =====================================================
             BOTTOM DECORATION
         ====================================================== */}
 
         <Reveal
           delay={0.35}
           className="
-            flex
+            hidden
+            sm:flex
             items-center
             justify-center
             mt-12

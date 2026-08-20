@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Send } from "lucide-react";
 
 export default function BookingForm() {
-  const [mode, setMode] = useState<"Video Consultation" | "In-Store Visit">("Video Consultation");
+  const [mode, setMode] = useState<"Video Consultation" | "Talk to an Expert">("Video Consultation");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [interest, setInterest] = useState("");
@@ -26,7 +26,7 @@ export default function BookingForm() {
   return (
     <form onSubmit={handleSubmit} className="border border-line p-7 md:p-9 bg-white/50">
       <div className="grid grid-cols-2 gap-3 mb-7">
-        {(["Video Consultation", "In-Store Visit"] as const).map((m) => (
+        {(["Video Consultation", "Talk to an Expert"] as const).map((m) => (
           <button
             type="button"
             key={m}
@@ -93,7 +93,7 @@ export default function BookingForm() {
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
             rows={3}
-            placeholder="Preferred date, budget range, occasion..."
+            placeholder="Your questions, budget range, occasion..."
             className="w-full border border-line px-4 py-3 text-sm bg-white focus:outline-none focus:border-maroon resize-none"
           />
         </div>

@@ -1,7 +1,6 @@
-import { SunburstRays, DiamondIcon } from "@/components/JewelIcons";
-import ArtPanel from "@/components/ArtPanel";
-import { RingIcon, NecklaceIcon, EarringIcon } from "@/components/JewelIcons";
-import { ShieldCheck, Leaf, Gem, HandHeart } from "lucide-react";
+import Image from "next/image";
+import { SunburstRays } from "@/components/JewelIcons";
+import SunriseAssurance from "@/components/SunriseAssurance";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
 
@@ -12,17 +11,30 @@ export const metadata = {
 };
 
 const milestones = [
-  { year: "2011", text: "Sunrise begins as a family diamond trading house in Mumbai." },
-  { year: "2016", text: "Opened our first boutique studio and in-house design atelier." },
-  { year: "2021", text: "Introduced certified lab-grown diamonds alongside natural stones." },
-  { year: "2025", text: "Serving a growing family of customers across India, on-demand." },
-];
-
-const values = [
-  { icon: ShieldCheck, title: "Certified, Always", text: "Every stone we sell is graded by GIA, IGI or SGL — no exceptions." },
-  { icon: Leaf, title: "Ethically Sourced", text: "Full traceability on origin, whether natural or lab-grown." },
-  { icon: Gem, title: "Made By Hand", text: "In-house karigars hand-finish every setting to a jeweller's eye." },
-  { icon: HandHeart, title: "Honest Pricing", text: "Rate cards, making charges and stone value, shown line by line." },
+  {
+    year: "2011",
+    text: "Sunrise begins as a family diamond trading house in Mumbai.",
+    image: "/images/products/featherline-tennis-bracelet.jpg",
+    alt: "Diamond jewellery worn for an everyday moment",
+  },
+  {
+    year: "2016",
+    text: "Opened our first boutique studio and in-house design atelier.",
+    image: "/images/products/cascade-choker-necklace.jpg",
+    alt: "Statement diamond necklace from the Sunrise atelier",
+  },
+  {
+    year: "2021",
+    text: "Introduced certified lab-grown diamonds alongside natural stones.",
+    image: "/images/products/kada-heritage-bracelet.jpg",
+    alt: "Heritage gold bracelet with diamond detailing",
+  },
+  {
+    year: "2025",
+    text: "Serving a growing family of customers across India, on-demand.",
+    image: "/images/products/lumina-oval-hoops.jpg",
+    alt: "Diamond oval hoop earrings",
+  },
 ];
 
 export default function AboutPage() {
@@ -63,50 +75,68 @@ export default function AboutPage() {
               Book a Consultation
             </Link>
           </div>
-          <ArtPanel icon={DiamondIcon} tone="blush" className="aspect-[4/5] rounded-sm" />
+          <div className="group relative aspect-[4/5] overflow-hidden rounded-sm bg-blush">
+            <Image
+              src="/images/products/featherline-tennis-bracelet.jpg"
+              alt="Diamond jewellery worn for an everyday moment"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-maroon-deep/35 via-transparent to-white/10" />
+          </div>
         </Reveal>
       </section>
 
-      <section className="section bg-blush/50">
-        <div className="container-lg">
-          <Reveal className="text-center mb-14">
-            <span className="eyebrow">What We Stand For</span>
-            <h2 className="font-display text-3xl md:text-[2.4rem] text-maroon-deep mt-3">
-              Our Values
-            </h2>
-          </Reveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((v, i) => (
-              <Reveal key={v.title} delay={i * 0.08} className="text-center flex flex-col items-center">
-                <div className="w-14 h-14 rounded-full border border-gold/50 flex items-center justify-center mb-4">
-                  <v.icon className="w-6 h-6 text-maroon" strokeWidth={1.4} />
-                </div>
-                <h3 className="font-display text-base text-ink">{v.title}</h3>
-                <p className="text-sm text-ink-soft mt-2 leading-relaxed">{v.text}</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
+      <SunriseAssurance />
 
-      <section className="section">
+      <section className="section bg-cream-deep/35">
         <div className="container-lg">
           <Reveal className="text-center mb-14">
             <span className="eyebrow">Our Journey</span>
             <h2 className="font-display text-3xl md:text-[2.4rem] text-maroon-deep mt-3">
-              Milestones
+              A Legacy in the Making
             </h2>
+            <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-ink-soft">
+              From a family-led diamond desk to a modern jewellery house, every chapter
+              has been shaped by trust, craft, and the people who wear our pieces.
+            </p>
           </Reveal>
-          <div className="max-w-2xl mx-auto">
-            {milestones.map((m, i) => (
-              <Reveal key={m.year} delay={i * 0.1} className="flex gap-6 md:gap-10">
-                <div className="flex flex-col items-center">
-                  <span className="font-display text-lg text-gold">{m.year}</span>
-                  {i !== milestones.length - 1 && <div className="w-px flex-1 bg-line my-2" />}
-                </div>
-                <p className="text-sm text-ink-soft leading-relaxed pb-10">{m.text}</p>
-              </Reveal>
-            ))}
+          <div className="relative mx-auto max-w-5xl">
+            <div className="absolute bottom-0 left-4 top-0 w-px bg-gold/35 md:left-1/2" />
+            <div className="space-y-10 md:space-y-14">
+              {milestones.map((m, i) => (
+                <Reveal
+                  key={m.year}
+                  delay={i * 0.1}
+                  className="relative grid gap-6 pl-12 md:grid-cols-2 md:gap-14 md:pl-0"
+                >
+                  <span className="absolute left-0 top-8 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-gold/60 bg-cream text-xs font-semibold tracking-[0.12em] text-maroon md:left-1/2 md:-translate-x-1/2">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+
+                  <div className={`relative aspect-[16/10] overflow-hidden rounded-sm border border-line bg-white shadow-[0_14px_35px_rgba(64,33,27,0.07)] ${i % 2 === 0 ? "md:order-1" : "md:order-2"}`}>
+                    <Image
+                      src={m.image}
+                      alt={m.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 42vw"
+                      className="object-cover transition-transform duration-700 hover:scale-105"
+                    />
+                  </div>
+
+                  <div className={`flex flex-col justify-center ${i % 2 === 0 ? "md:order-2" : "md:order-1 md:text-right"}`}>
+                    <span className="font-display text-4xl leading-none text-gold/80">{m.year}</span>
+                    <h3 className="mt-3 font-display text-xl text-maroon-deep">
+                      {i === 0 ? "The First Spark" : i === 1 ? "A Place to Create" : i === 2 ? "More Choice, Same Trust" : "A Growing Community"}
+                    </h3>
+                    <p className="mt-2 max-w-md text-sm leading-relaxed text-ink-soft md:ml-0 md:max-w-sm">
+                      {m.text}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -120,9 +150,33 @@ export default function AboutPage() {
             </h2>
           </Reveal>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <Reveal delay={0}><ArtPanel icon={RingIcon} tone="cream" className="aspect-[4/5] rounded-sm" /></Reveal>
-            <Reveal delay={0.1}><ArtPanel icon={NecklaceIcon} tone="maroon" className="aspect-[4/5] rounded-sm" /></Reveal>
-            <Reveal delay={0.2}><ArtPanel icon={EarringIcon} tone="cream" className="aspect-[4/5] rounded-sm" /></Reveal>
+            <Reveal delay={0} className="group relative aspect-[4/5] overflow-hidden rounded-sm bg-cream">
+              <Image
+                src="/images/products/kada-heritage-bracelet.jpg"
+                alt="Heritage gold bracelet with diamond detailing"
+                fill
+                sizes="(max-width: 640px) 100vw, 33vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </Reveal>
+            <Reveal delay={0.1} className="group relative aspect-[4/5] overflow-hidden rounded-sm bg-maroon">
+              <Image
+                src="/images/products/cascade-choker-necklace.jpg"
+                alt="Statement diamond necklace from the Sunrise atelier"
+                fill
+                sizes="(max-width: 640px) 100vw, 33vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </Reveal>
+            <Reveal delay={0.2} className="group relative aspect-[4/5] overflow-hidden rounded-sm bg-cream">
+              <Image
+                src="/images/products/lumina-oval-hoops.jpg"
+                alt="Diamond oval hoop earrings"
+                fill
+                sizes="(max-width: 640px) 100vw, 33vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </Reveal>
           </div>
         </div>
       </section>

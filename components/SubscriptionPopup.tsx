@@ -2,9 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import { X, Sparkles } from "lucide-react";
-import PhotoPanel from "@/components/PhotoPanel";
-import { NecklaceIcon } from "@/components/JewelIcons";
 
 const DISMISS_KEY = "sunrise_offer_dismissed";
 
@@ -60,7 +59,16 @@ export default function SubscriptionPopup() {
               <X className="w-4 h-4" />
             </button>
 
-            <PhotoPanel icon={NecklaceIcon} tone="maroon" className="hidden sm:block min-h-[320px]" spin />
+            <div className="relative hidden min-h-[320px] overflow-hidden bg-maroon-deep sm:block">
+              <Image
+                src="/images/products/dewdrop-pendant-necklace.jpg"
+                alt="Diamond pendant necklace"
+                fill
+                sizes="(max-width: 640px) 0px, 50vw"
+                className="object-cover transition-transform duration-700 hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-maroon-deep/45 via-transparent to-maroon-deep/10" />
+            </div>
 
             <div className="p-8 sm:p-9 flex flex-col justify-center">
               {!submitted ? (

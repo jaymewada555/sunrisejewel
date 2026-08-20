@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle, Sparkles, X } from "lucide-react";
+import { ListFilter, MessageCircle, Sparkles, X } from "lucide-react";
 import { useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Reveal from "@/components/Reveal";
@@ -39,6 +39,7 @@ export default function ProductsExplorer() {
   const [occasion, setOccasion] = useState<Occasion | "All">(
     (searchParams.get("occasion") as Occasion) || "All"
   );
+  const [filterOpen, setFilterOpen] = useState(false);
 
   const filtered = useMemo(() => {
     return products.filter((p) => {
@@ -54,10 +55,22 @@ export default function ProductsExplorer() {
   return (
     <section className="catalog-page section">
       <div className="container-lg">
-        <Reveal className="catalog-toolbar">
+        <div className="catalog-layout">
+        <Reveal className={`catalog-toolbar ${filterOpen ? "is-open" : ""}`}>
           <div className="catalog-toolbar-inner">
             <div className="flex items-center justify-between gap-4 mb-5">
-              <span className="eyebrow text-maroon-soft">Filter</span>
+              <div>
+                <span className="eyebrow text-maroon-soft">Filter Collection</span>
+                <p className="mt-1 text-xs text-ink-soft">Find your perfect piece</p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setFilterOpen(false)}
+                aria-label="Close filters"
+                className="catalog-filter-close"
+              >
+                <X className="w-5 h-5" />
+              </button>
               {hasActiveFilters && (
                 <button
                   onClick={() => {
@@ -111,11 +124,12 @@ export default function ProductsExplorer() {
           </div>
         </Reveal>
 
-        <div className="catalog-meta">
+        <div className="catalog-results">
+          <div className="catalog-meta">
           <p className="text-sm text-ink-soft">
             Showing {filtered.length} {filtered.length === 1 ? "piece" : "pieces"}
           </p>
-        </div>
+          </div>
 
         {filtered.length === 0 ? (
           <div className="empty-state">
@@ -153,7 +167,7 @@ export default function ProductsExplorer() {
                         <span className="product-badge">New</span>
                       </div>
 
-                      <h3 className="font-display text-[1.7rem] leading-none text-ink mt-3">
+                      <h3 className="product-title font-display text-[1.7rem] leading-none text-ink mt-3">
                         {product.name}
                       </h3>
 
@@ -180,6 +194,24 @@ export default function ProductsExplorer() {
             })}
           </div>
         )}
+        </div>
+        </div>
+
+        <div
+          className={`catalog-filter-backdrop ${filterOpen ? "is-open" : ""}`}
+          onClick={() => setFilterOpen(false)}
+          aria-hidden="true"
+        />
+
+        <button
+          type="button"
+          className="catalog-filter-fab"
+          onClick={() => setFilterOpen(true)}
+          aria-label="Open filters"
+        >
+          <ListFilter className="w-5 h-5" />
+          <span>Filter</span>
+        </button>
 
         <Reveal className="custom-design-banner">
           <div className="custom-design-inner">

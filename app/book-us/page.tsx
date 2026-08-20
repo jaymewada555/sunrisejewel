@@ -1,12 +1,12 @@
 import { SunburstRays } from "@/components/JewelIcons";
-import { Video, Store, Phone, Mail, MapPin, Clock, PhoneCall } from "lucide-react";
+import { Video, Phone, Mail, MapPin, Clock, PhoneCall } from "lucide-react";
 import BookingForm from "@/components/BookingForm";
 import Reveal from "@/components/Reveal";
 
 export const metadata = {
   title: "Book Us | Sunrise Diamond & Jewels",
   description:
-    "Book a video consultation or an in-store visit with a Sunrise Diamond & Jewels diamond consultant.",
+    "Book a video consultation or talk to a Sunrise Diamond & Jewels jewellery expert.",
 };
 
 const modes = [
@@ -30,11 +30,11 @@ export default function BookUsPage() {
         <Reveal className="container-lg relative py-16 md:py-24 text-center">
           <span className="eyebrow text-gold-light">Book Us</span>
           <h1 className="font-display text-cream text-3xl md:text-5xl mt-3">
-            Let&apos;s Plan Your Visit
+            Let&apos;s Find Your Perfect Piece
           </h1>
           <p className="text-cream/65 max-w-lg mx-auto mt-4 text-sm leading-relaxed">
-            Tell us what you&apos;re looking for and a diamond consultant will
-            reach out within one business day.
+            Tell us what you&apos;re looking for and our jewellery experts will
+            help you choose with confidence.
           </p>
         </Reveal>
       </section>
@@ -44,7 +44,7 @@ export default function BookUsPage() {
           <Reveal>
             <span className="eyebrow">How It Works</span>
             <h2 className="font-display text-3xl text-maroon-deep mt-3 mb-8">
-              Two Ways to Meet Us
+              Two Ways to Connect
             </h2>
             <div className="space-y-8">
               {modes.map((m) => (

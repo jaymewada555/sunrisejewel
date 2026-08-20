@@ -37,21 +37,17 @@ export default function Footer() {
       <div className="container-lg pt-16 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr_1.2fr] gap-12">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="bg-cream rounded-full p-1.5">
-                <Image
-                  src="/images/logo-transparent.png"
-                  alt="Sunrise Diamond & Jewels"
-                  width={40}
-                  height={40}
-                  className="w-8 h-8 object-contain"
-                />
-              </div>
-              <span className="font-display text-lg tracking-wide">Sunrise</span>
+            <div className="mb-4">
+              <Image
+                src="/images/logo-White.png"
+                alt="Sunrise Diamond & Jewels"
+                width={300}
+                height={100}
+                className="h-[120px] w-auto object-contain"
+              />
             </div>
             <p className="text-sm text-cream/65 leading-relaxed max-w-xs">
-              Crafting timeless diamond jewellery that celebrates life&apos;s most
-              precious moments — certified, ethical and made to your story.
+             Certified diamonds, crafted for your story.
             </p>
             <div className="flex items-center gap-4 mt-6">
               <a href="#" aria-label="Instagram" className="text-cream/70 hover:text-gold-light transition-colors">

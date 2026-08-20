@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, Phone, Search, ShoppingBag, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -68,32 +68,6 @@ export default function Header() {
             +91 70218 11747
           </a>
 
-          {/* Search & Bag */}
-          <div className="flex items-center gap-2 text-ink-soft">
-
-            <button
-              type="button"
-              aria-label="Search"
-              className="p-1.5 hover:text-maroon transition-colors"
-            >
-              <Search
-                className="w-4 h-4"
-                strokeWidth={1.8}
-              />
-            </button>
-
-            <button
-              type="button"
-              aria-label="Bag"
-              className="p-1.5 hover:text-maroon transition-colors"
-            >
-              <ShoppingBag
-                className="w-4 h-4"
-                strokeWidth={1.8}
-              />
-            </button>
-
-          </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -143,33 +117,6 @@ export default function Header() {
 
               +91 70218 11747
             </a>
-
-            {/* Search & Bag */}
-            <div className="flex items-center gap-3 text-ink-soft">
-
-              <button
-                type="button"
-                aria-label="Search"
-                className="p-2 border border-line rounded-full hover:text-maroon transition-colors"
-              >
-                <Search
-                  className="w-4 h-4"
-                  strokeWidth={1.8}
-                />
-              </button>
-
-              <button
-                type="button"
-                aria-label="Bag"
-                className="p-2 border border-line rounded-full hover:text-maroon transition-colors"
-              >
-                <ShoppingBag
-                  className="w-4 h-4"
-                  strokeWidth={1.8}
-                />
-              </button>
-
-            </div>
 
           </nav>
         </div>

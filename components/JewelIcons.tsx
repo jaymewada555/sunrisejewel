@@ -111,10 +111,10 @@ export function SunburstRays({ className }: IconProps) {
         const angle = (i / rays.length) * Math.PI * 2;
         const inner = 42;
         const outer = i % 2 === 0 ? 96 : 78;
-        const x1 = 100 + Math.cos(angle) * inner;
-        const y1 = 100 + Math.sin(angle) * inner;
-        const x2 = 100 + Math.cos(angle) * outer;
-        const y2 = 100 + Math.sin(angle) * outer;
+        const x1 = (100 + Math.cos(angle) * inner).toFixed(6);
+        const y1 = (100 + Math.sin(angle) * inner).toFixed(6);
+        const x2 = (100 + Math.cos(angle) * outer).toFixed(6);
+        const y2 = (100 + Math.sin(angle) * outer).toFixed(6);
         return (
           <line
             key={i}

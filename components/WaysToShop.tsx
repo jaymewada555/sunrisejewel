@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Video, Store, HomeIcon, Sparkles } from "lucide-react";
+import { ArrowRight, Video, PhoneCall, HomeIcon, Sparkles } from "lucide-react";
 import Reveal from "@/components/Reveal";
 
 export default function WaysToShop() {
@@ -297,7 +297,7 @@ export default function WaysToShop() {
 
 
           {/* =====================================================
-              2. STORE VISIT
+              2. TALK TO AN EXPERT
           ====================================================== */}
 
           <Reveal
@@ -410,7 +410,7 @@ export default function WaysToShop() {
                   group-hover:border-gold
                 "
               >
-                <Store
+                <PhoneCall
                   className="
                     w-[18px]
                     h-[18px]
@@ -431,7 +431,7 @@ export default function WaysToShop() {
                   text-gold-light
                 "
               >
-                In Person
+                Personal Guidance
               </span>
 
               <h3
@@ -444,10 +444,10 @@ export default function WaysToShop() {
                   leading-tight
                 "
               >
-                Plan Your
+                Talk to an
                 <br />
                 <span className="italic font-light">
-                  Store Visit
+                  Expert
                 </span>
               </h3>
 
@@ -460,8 +460,8 @@ export default function WaysToShop() {
                   max-w-[17rem]
                 "
               >
-                Skip the wait and enjoy a personalised jewellery
-                shopping experience.
+                Speak with a jewellery expert and get personalised guidance
+                on diamonds, designs, and the right piece for your occasion.
               </p>
 
               <Link
@@ -486,7 +486,7 @@ export default function WaysToShop() {
                   hover:text-maroon-deep
                 "
               >
-                Reserve Your Visit
+                Talk to an Expert
 
                 <ArrowRight
                   className="

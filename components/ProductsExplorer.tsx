@@ -162,7 +162,7 @@ export default function ProductsExplorer() {
                       </p>
 
                       <div className="product-footer">
-                        <span className="product-price">{product.price}</span>
+                        {/* <span className="product-price">{product.price}</span> */}
                         <a
                           href={`https://wa.me/917021811747?text=${encodeURIComponent(waMessage)}`}
                           target="_blank"

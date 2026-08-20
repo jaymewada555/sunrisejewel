@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Video, Store } from "lucide-react";
+import { ArrowRight, Video, Store, MessageCircle, PhoneCall } from "lucide-react";
 import { SunburstRays } from "@/components/JewelIcons";
 import Reveal from "@/components/Reveal";
 
@@ -22,7 +22,7 @@ export default function CTABanner() {
               <Video className="w-3.5 h-3.5" /> Book Video Call
             </Link>
             <Link href="/book-us" className="btn-primary !bg-gold !border-gold !text-maroon-deep hover:!bg-gold-light">
-              <Store className="w-3.5 h-3.5" /> Visit a Store
+              <PhoneCall className="w-3.5 h-3.5" /> Talk to an Expert
             </Link>
           </div>
         </Reveal>

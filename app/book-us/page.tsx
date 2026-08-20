@@ -1,5 +1,5 @@
 import { SunburstRays } from "@/components/JewelIcons";
-import { Video, Store, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Video, Store, Phone, Mail, MapPin, Clock, PhoneCall } from "lucide-react";
 import BookingForm from "@/components/BookingForm";
 import Reveal from "@/components/Reveal";
 
@@ -16,9 +16,9 @@ const modes = [
     text: "Meet a diamond consultant one-on-one from anywhere — see stones and settings on screen before you decide.",
   },
   {
-    icon: Store,
-    title: "In-Store Visit",
-    text: "Walk into our Mumbai studio for a hands-on styling session and to view certified stones in person.",
+    icon: PhoneCall,
+    title: "Talk to an Expert",
+    text: "Get personalized guidance from our experts to find the perfect piece for your style and occasion.",
   },
 ];
 

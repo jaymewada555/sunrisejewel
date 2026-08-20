@@ -31,7 +31,9 @@ function YoutubeIcon() {
 
 export default function Footer() {
   return (
-    <footer className="bg-maroon-deep text-cream/90">
+    <footer className="relative bg-maroon-deep text-cream/90">
+  <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-light/60 to-transparent" />
+
       <div className="container-lg pt-16 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr_1.2fr] gap-12">
           <div>
@@ -117,3 +119,4 @@ export default function Footer() {
     </footer>
   );
 }
+ 

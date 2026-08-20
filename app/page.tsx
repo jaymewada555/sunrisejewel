@@ -7,7 +7,7 @@ import WaysToShop from "@/components/WaysToShop";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import CTABanner from "@/components/CTABanner";
 import CustomersSlider from "@/components/CustomersSlider";
-import VideoStoriesSlider from "@/components/VideoStoriesSlider";
+// import VideoStoriesSlider from "@/components/VideoStoriesSlider";
 import SubscriptionPopup from "@/components/SubscriptionPopup";
 import SunriseAssurance from "@/components/SunriseAssurance";
 
@@ -23,7 +23,6 @@ export default function Home() {
       <WaysToShop />
       <WhyChooseUs />
       <CTABanner />
-      <VideoStoriesSlider />
       <CustomersSlider />
       <SubscriptionPopup />
     </>

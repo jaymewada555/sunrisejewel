@@ -2,48 +2,51 @@
 
 import Link from "next/link";
 import { ArrowRight, Sparkles } from "lucide-react";
+import useEmblaCarousel from "embla-carousel-react";
 import Reveal from "@/components/Reveal";
 
 const collections = [
   {
-    name: "Aekta — The Wedding Edit",
-    occasion: "Bridal",
+    name: "Heart Cut",
+    occasion: "Diamond Type",
     description:
-      "Timeless bridal jewellery crafted for your most unforgettable moments.",
-    image:
-      "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&q=90",
+      "A romantic silhouette with distinctive facets that make every glance feel personal.",
+    image: "/images/products/JPG/R (1).jpg",
     position: "center",
   },
   {
-    name: "Carats of Love",
-    occasion: "Gifting",
+    name: "Pear Cut",
+    occasion: "Diamond Type",
     description:
-      "A sparkling expression of love, made to celebrate every beautiful story.",
-    image:
-      "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&q=90",
+      "A graceful teardrop profile that brings elegant length and luminous movement.",
+    image: "/images/products/JPG/R (100).jpg",
     position: "center",
   },
   {
-    name: "Royal Green",
-    occasion: "Statement",
+    name: "Emerald Cut",
+    occasion: "Diamond Type",
     description:
-      "Rich colour, refined diamonds and an unmistakable royal presence.",
-    image:
-      "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=90",
+      "Clean step-cut facets with a refined, architectural glow and quiet confidence.",
+    image: "/images/products/JPG/1 (10).jpg",
     position: "center",
   },
   {
-    name: "Solaris Minimal",
-    occasion: "Everyday",
+    name: "Round Brilliant",
+    occasion: "Diamond Type",
     description:
-      "Quietly elegant pieces designed to shine with you, every single day.",
-    image:
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1200&q=90",
+      "The classic choice for maximum fire, sparkle and timeless diamond elegance.",
+    image: "/images/products/JPG/ER343 (10).jpg",
     position: "center",
   },
 ];
 
 export default function Collections() {
+  const [emblaRef] = useEmblaCarousel({
+    loop: false,
+    dragFree: true,
+    containScroll: "trimSnaps",
+  });
+
   return (
     <section className="section relative overflow-hidden bg-[#fbf8f3]">
 
@@ -88,7 +91,7 @@ export default function Collections() {
         <Reveal className="text-center mb-12 md:mb-16">
 
           <span className="eyebrow">
-            Our Collections
+            Diamond Types
           </span>
 
           <h2
@@ -100,7 +103,7 @@ export default function Collections() {
               mt-3
             "
           >
-            Diamonds for Every Story
+            Choose Your Perfect Diamond
           </h2>
 
           <p
@@ -113,8 +116,8 @@ export default function Collections() {
               leading-relaxed
             "
           >
-            Explore thoughtfully designed collections created for
-            celebrations, everyday elegance and everything in between.
+            Explore our selection of diamonds, each chosen for its beauty,
+            character and brilliance.
           </p>
 
           {/* Gold divider */}
@@ -142,28 +145,37 @@ export default function Collections() {
             COLLECTION GRID
         ====================================================== */}
 
-        <div
-          className="
-            grid
-            grid-cols-1
-            sm:grid-cols-2
-            lg:grid-cols-4
-            gap-5
-            md:gap-6
-          "
-        >
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div
+            className="
+              flex
+              -ml-3
+              md:-ml-4
+              lg:grid
+              lg:grid-cols-4
+              lg:gap-6
+            "
+          >
 
           {collections.map((c, i) => (
 
             <Reveal
               key={c.name}
               delay={i * 0.08}
+              className="
+                min-w-0
+                pl-3
+                flex-[0_0_82%]
+                sm:flex-[0_0_50%]
+                md:pl-4
+                lg:flex-none
+                lg:min-w-0
+                lg:pl-0
+              "
             >
 
               <Link
-                href={`/products?occasion=${encodeURIComponent(
-                  c.occasion
-                )}`}
+                href="/products"
                 className="
                   group
                   relative
@@ -444,6 +456,7 @@ export default function Collections() {
 
           ))}
 
+          </div>
         </div>
 
 

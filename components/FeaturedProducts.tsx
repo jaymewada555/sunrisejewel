@@ -11,7 +11,7 @@ function getProductImage(name: string, category: string) {
   // Aurora Solitaire Ring
   if (text.includes("aurora") || text.includes("solitaire")) {
     return {
-      src: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1000&q=90",
+      src: "/images/products/aurora-solitaire-ring.jpg",
       alt: `${name} solitaire ring`,
     };
   }
@@ -19,7 +19,7 @@ function getProductImage(name: string, category: string) {
   // Meridian Halo Ring
   if (text.includes("meridian") || text.includes("halo")) {
     return {
-      src: "https://images.unsplash.com/photo-1530901729437-5372782e53f2?auto=format&fit=crop&w=1000&q=90",
+      src: "/images/products/meridian-halo-ring.jpg",
       alt: `${name} halo ring`,
     };
   }
@@ -31,7 +31,7 @@ function getProductImage(name: string, category: string) {
     text.includes("tennis")
   ) {
     return {
-      src: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1000&q=90",
+      src: "/images/products/featherline-tennis-bracelet.jpg",
       alt: `${name} tennis bracelet`,
     };
   }
@@ -43,7 +43,7 @@ function getProductImage(name: string, category: string) {
     text.includes("bangle")
   ) {
     return {
-      src: "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1000&q=90",
+      src: "/images/products/kada-heritage-bracelet.jpg",
       alt: `${name} kada bracelet`,
     };
   }
@@ -51,7 +51,7 @@ function getProductImage(name: string, category: string) {
   // Emerald jewellery
   if (text.includes("emerald") || text.includes("green")) {
     return {
-      src: "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1000&q=90",
+      src: "/images/products/meridian-halo-ring.jpg",
       alt: `${name} emerald jewellery`,
     };
   }
@@ -59,7 +59,7 @@ function getProductImage(name: string, category: string) {
   // Engagement ring
   if (text.includes("engagement") || text.includes("proposal")) {
     return {
-      src: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1000&q=90",
+      src: "/images/products/aurora-solitaire-ring.jpg",
       alt: `${name} engagement ring`,
     };
   }
@@ -71,7 +71,7 @@ function getProductImage(name: string, category: string) {
     text.includes("22k")
   ) {
     return {
-      src: "https://images.unsplash.com/photo-1713950920412-97799efdf870?auto=format&fit=crop&w=1000&q=90",
+      src: "/images/products/sunray-bangle-set.jpg",
       alt: `${name} gold jewellery`,
     };
   }
@@ -83,7 +83,7 @@ function getProductImage(name: string, category: string) {
     text.includes("chain")
   ) {
     return {
-      src: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1000&q=90",
+      src: "/images/products/dewdrop-pendant-necklace.jpg",
       alt: `${name} necklace`,
     };
   }
@@ -95,7 +95,7 @@ function getProductImage(name: string, category: string) {
     text.includes("hoop")
   ) {
     return {
-      src: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1000&q=90",
+      src: "/images/products/veil-drop-earrings.jpg",
       alt: `${name} earrings`,
     };
   }
@@ -103,14 +103,14 @@ function getProductImage(name: string, category: string) {
   // Generic ring
   if (text.includes("ring")) {
     return {
-      src: "https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?auto=format&fit=crop&w=1000&q=90",
+      src: "/images/products/aurora-solitaire-ring.jpg",
       alt: `${name} ring`,
     };
   }
 
   // Generic jewellery
   return {
-    src: "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1000&q=90",
+    src: "/images/products/cascade-choker-necklace.jpg",
     alt: `${name} fine jewellery`,
   };
 }

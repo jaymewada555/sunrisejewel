@@ -6,33 +6,17 @@ import { categories } from "@/lib/data";
 import Reveal from "@/components/Reveal";
 
 const categoryImages: Record<string, string> = {
-  Rings:
-    "https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=90",
-
-  Necklaces:
-    "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=90",
-
-  Earrings:
-    "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=90",
-
-  Bracelets:
-    "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=90",
-
-  Pendants:
-    "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=90",
-
-  Bangles:
-    "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=90",
-
-  "Mangalsutra":
-    "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&q=90",
-
-  "Bridal Jewellery":
-    "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?auto=format&fit=crop&w=800&q=90",
+  Rings: "/images/products/aurora-solitaire-ring.jpg",
+  Necklaces: "/images/products/cascade-choker-necklace.jpg",
+  Earrings: "/images/products/veil-drop-earrings.jpg",
+  Bracelets: "/images/products/featherline-tennis-bracelet.jpg",
+  Pendants: "/images/products/dewdrop-pendant-necklace.jpg",
+  Bangles: "/images/products/sunray-bangle-set.jpg",
+  Mangalsutra: "/images/products/kada-heritage-bracelet.jpg",
+  "Bridal Jewellery": "/images/products/meridian-halo-ring.jpg",
 };
 
-const fallbackImage =
-  "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=90";
+const fallbackImage = "/images/products/aurora-solitaire-ring.jpg";
 
 export default function Categories() {
   const [emblaRef] = useEmblaCarousel({

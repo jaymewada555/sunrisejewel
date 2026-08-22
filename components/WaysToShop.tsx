@@ -117,7 +117,7 @@ export default function WaysToShop() {
             {/* Image */}
 
             <img
-              src="https://www.vee24.com/lovable-uploads/bb86d62f-ae2a-45e0-9235-31a5dbf8565f.png"
+              src="/images/products/dewdrop-pendant-necklace.jpg"
               alt="Luxury jewellery virtual consultation"
               loading="lazy"
               className="
@@ -320,7 +320,7 @@ export default function WaysToShop() {
             {/* Image */}
 
             <img
-              src="https://jewel360.com/hs-fs/hubfs/AI-Generated%20Media/Images/The%20image%20depicts%20a%20luxurious%20jewelry%20store%20interior%20showcasing%20an%20elegant%20display%20of%20sparkling%20jewelry%20pieces%20under%20soft%20ambient%20lighting%20The%20walls%20are%20adorned%20with%20rich%20dark%20wood%20paneling%20and%20glass%20showcases%20that%20highlight%20an%20array%20of%20diamond%20rings.png?height=882&name=The+image+depicts+a+luxurious+jewelry+store+interior+showcasing+an+elegant+display+of+sparkling+jewelry+pieces+under+soft+ambient+lighting+The+walls+are+adorned+with+rich+dark+wood+paneling+and+glass+showcases+that+highlight+an+array+of+diamond+rings.png&width=1560"
+              src="/images/products/cascade-choker-necklace.jpg"
               alt="Luxury jewellery showroom"
               loading="lazy"
               className="
@@ -529,7 +529,7 @@ export default function WaysToShop() {
             {/* Image */}
 
             <img
-              src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1400&q=90"
+              src="/images/products/featherline-tennis-bracelet.jpg"
               alt="Woman wearing elegant jewellery at home"
               loading="lazy"
               className="

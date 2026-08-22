@@ -23,13 +23,16 @@ export type Product = {
 };
 
 export const categories: { name: Category; image: string }[] = [
-  { name: "Rings", image: "/images/cat-rings.jpg" },
-  { name: "Bracelets", image: "/images/cat-bracelets.jpg" },
-  { name: "Necklaces", image: "/images/cat-necklaces.jpg" },
-  { name: "Earrings", image: "/images/cat-earrings.jpg" },
-  { name: "Bangles", image: "/images/cat-bangles.jpg" },
-  { name: "Nosepins", image: "/images/cat-nosepins.jpg" },
-  { name: "Anklets", image: "/images/cat-anklets.jpg" },
+  { name: "Rings", image: "/images/products/aurora-solitaire-ring.jpg" },
+  {
+    name: "Bracelets",
+    image: "/images/products/featherline-tennis-bracelet.jpg",
+  },
+  { name: "Necklaces", image: "/images/products/cascade-choker-necklace.jpg" },
+  { name: "Earrings", image: "/images/products/veil-drop-earrings.jpg" },
+  { name: "Bangles", image: "/images/products/sunray-bangle-set.jpg" },
+  { name: "Nosepins", image: "/images/products/estelle-nosepin.jpg" },
+  { name: "Anklets", image: "/images/products/tidal-anklet.jpg" },
 ];
 
 export const products: Product[] = [

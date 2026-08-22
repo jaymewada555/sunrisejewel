@@ -63,7 +63,7 @@ export default function PromoBanners() {
               {/* Image */}
 
               <img
-                src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=1400&q=90"
+                src="/images/products/cascade-choker-necklace.jpg"
                 alt="Luxury Indian jewellery"
                 loading="lazy"
                 className="
@@ -281,7 +281,7 @@ export default function PromoBanners() {
                 {/* Image */}
 
                 <img
-                  src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&q=90"
+                  src="/images/products/dewdrop-pendant-necklace.jpg"
                   alt="Elegant diamond pendant"
                   loading="lazy"
                   className="
@@ -460,7 +460,7 @@ export default function PromoBanners() {
                 {/* Image */}
 
                 <img
-                  src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=90"
+                  src="/images/products/meridian-halo-ring.jpg"
                   alt="Luxury men's jewellery"
                   loading="lazy"
                   className="

@@ -7,33 +7,23 @@ import { motion } from "framer-motion";
 
 const slides = [
   {
-    desktop:
-      "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=2200&q=95",
-
-    mobile:
-      "https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1000&q=95",
+    desktop: "/images/products/aurora-solitaire-ring.jpg",
+    mobile: "/images/products/aurora-solitaire-ring.jpg",
 
     desktopAlt: "Luxury diamond jewellery collection",
     mobileAlt: "Luxury diamond jewellery",
   },
-
   {
-    desktop:
-      "https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=2200&q=95",
-
-    mobile:
-      "https://images.unsplash.com/photo-1601121141461-9d6647b5f43c?auto=format&fit=crop&w=1000&q=95",
+    desktop: "/images/products/cascade-choker-necklace.jpg",
+    mobile: "/images/products/cascade-choker-necklace.jpg",
 
     desktopAlt: "Elegant gold and diamond jewellery",
     mobileAlt: "Elegant diamond ring",
   },
 
   {
-    desktop:
-      "https://images.unsplash.com/photo-1596944924616-7b3841e7f4c5?auto=format&fit=crop&w=2200&q=95",
-
-    mobile:
-      "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1000&q=95",
+    desktop: "/images/products/featherline-tennis-bracelet.jpg",
+    mobile: "/images/products/featherline-tennis-bracelet.jpg",
 
     desktopAlt: "Premium jewellery collection",
     mobileAlt: "Diamond jewellery close up",

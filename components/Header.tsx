@@ -27,14 +27,16 @@ export default function Header() {
           className="flex items-center shrink-0"
           onClick={() => setOpen(false)}
         >
-          <Image
-            src="/images/logo-transparent.png"
-            alt="Sunrise Diamond & Jewels"
-            width={300}
-            height={100}
-            className="h-[120px] md:h-[100px] w-auto object-contain"
-            priority
-          />
+          <span className="relative block h-[120px] w-[360px] md:h-[100px] md:w-[300px]">
+            <Image
+              src="/images/logo-transparent.png"
+              alt="Sunrise Diamond & Jewels"
+              fill
+              sizes="(max-width: 767px) 360px, 300px"
+              className="object-contain"
+              priority
+            />
+          </span>
         </Link>
 
         {/* Desktop Navigation */}

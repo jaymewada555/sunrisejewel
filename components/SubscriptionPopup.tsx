@@ -61,7 +61,7 @@ export default function SubscriptionPopup() {
 
             <div className="relative hidden min-h-[320px] overflow-hidden bg-maroon-deep sm:block">
               <Image
-                src="/images/products/dewdrop-pendant-necklace.jpg"
+                src="/images/popup.png"
                 alt="Diamond pendant necklace"
                 fill
                 sizes="(max-width: 640px) 0px, 50vw"

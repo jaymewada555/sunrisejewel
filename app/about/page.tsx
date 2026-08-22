@@ -14,25 +14,25 @@ const milestones = [
   {
     year: "2011",
     text: "Sunrise begins as a family diamond trading house in Mumbai.",
-    image: "/images/products/featherline-tennis-bracelet.jpg",
+    image: "/images/aboutus/history1.png",
     alt: "Diamond jewellery worn for an everyday moment",
   },
   {
     year: "2016",
     text: "Opened our first boutique studio and in-house design atelier.",
-    image: "/images/products/cascade-choker-necklace.jpg",
+    image: "/images/aboutus/history2.png",
     alt: "Statement diamond necklace from the Sunrise atelier",
   },
   {
     year: "2021",
     text: "Introduced certified lab-grown diamonds alongside natural stones.",
-    image: "/images/products/kada-heritage-bracelet.jpg",
+    image: "/images/aboutus/history3.png",
     alt: "Heritage gold bracelet with diamond detailing",
   },
   {
     year: "2025",
     text: "Serving a growing family of customers across India, on-demand.",
-    image: "/images/products/lumina-oval-hoops.jpg",
+    image: "/images/aboutus/history4.png",
     alt: "Diamond oval hoop earrings",
   },
 ];

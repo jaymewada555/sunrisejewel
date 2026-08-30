@@ -4,21 +4,21 @@ import BookingForm from "@/components/BookingForm";
 import Reveal from "@/components/Reveal";
 
 export const metadata = {
-  title: "Book Us | Sunrise Diamond & Jewels",
+  title: "Find Us | Sunrise Diamond & Jewels",
   description:
-    "Book a video consultation or talk to a Sunrise Diamond & Jewels jewellery expert.",
+    "Find our studio or request a one-on-one consultation with a Sunrise Diamond & Jewels jewellery expert.",
 };
 
 const modes = [
   {
     icon: Video,
     title: "Video Consultation",
-    text: "Meet a diamond consultant one-on-one from anywhere — see stones and settings on screen before you decide.",
+    text: "Meet a consultant from anywhere and shortlist designs before you visit.",
   },
   {
     icon: PhoneCall,
-    title: "Talk to an Expert",
-    text: "Get personalized guidance from our experts to find the perfect piece for your style and occasion.",
+    title: "1-on-1 Consultation",
+    text: "Speak directly with our expert for personalised guidance on style, metal, and fit.",
   },
 ];
 
@@ -28,13 +28,12 @@ export default function BookUsPage() {
       <section className="relative overflow-hidden bg-maroon-deep">
         <SunburstRays className="sunburst-mark w-[440px] h-[440px] text-gold-light -right-28 -top-28 animate-slow-spin" />
         <Reveal className="container-lg relative py-16 md:py-24 text-center">
-          <span className="eyebrow text-gold-light">Book Us</span>
+          <span className="eyebrow text-gold-light">Find Us</span>
           <h1 className="font-display text-cream text-3xl md:text-5xl mt-3">
-            Let&apos;s Find Your Perfect Piece
+            Visit Our Studio or Talk to an Expert
           </h1>
           <p className="text-cream/65 max-w-lg mx-auto mt-4 text-sm leading-relaxed">
-            Tell us what you&apos;re looking for and our jewellery experts will
-            help you choose with confidence.
+            Share your preferences and we&apos;ll help you find the right piece with confidence.
           </p>
         </Reveal>
       </section>

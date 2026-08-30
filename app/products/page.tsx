@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 export const metadata = {
   title: "Products | Sunrise Diamond & Jewels",
   description:
-    "Browse Sunrise Diamond & Jewels' certified diamond jewellery by category, metal and occasion. Enquire instantly over WhatsApp.",
+    "Browse Sunrise Diamond & Jewels' certified diamond jewellery by category and metal. Enquire instantly over WhatsApp.",
 };
 
 export default function ProductsPage() {

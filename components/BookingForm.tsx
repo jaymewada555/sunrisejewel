@@ -4,8 +4,9 @@ import { useState } from "react";
 import { Send } from "lucide-react";
 
 export default function BookingForm() {
-  const [mode, setMode] = useState<"Video Consultation" | "Talk to an Expert">("Video Consultation");
+  const [mode, setMode] = useState<"Video Consultation" | "1-on-1 Consultation">("Video Consultation");
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [interest, setInterest] = useState("");
   const [notes, setNotes] = useState("");
@@ -15,6 +16,7 @@ export default function BookingForm() {
     const lines = [
       `Hi Sunrise Diamond & Jewels, I'd like to book a ${mode}.`,
       `Name: ${name || "-"}`,
+      `Email: ${email || "-"}`,
       `Phone: ${phone || "-"}`,
       `Interested in: ${interest || "-"}`,
       notes ? `Notes: ${notes}` : "",
@@ -26,7 +28,7 @@ export default function BookingForm() {
   return (
     <form onSubmit={handleSubmit} className="border border-line p-7 md:p-9 bg-white/50">
       <div className="grid grid-cols-2 gap-3 mb-7">
-        {(["Video Consultation", "Talk to an Expert"] as const).map((m) => (
+        {(["Video Consultation", "1-on-1 Consultation"] as const).map((m) => (
           <button
             type="button"
             key={m}
@@ -53,6 +55,20 @@ export default function BookingForm() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Your name"
+            className="w-full border border-line px-4 py-3 text-sm bg-white focus:outline-none focus:border-maroon"
+          />
+        </div>
+
+        <div>
+          <label className="block text-xs text-ink-soft mb-2" htmlFor="email">
+            Email ID
+          </label>
+          <input
+            id="email"
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="you@example.com"
             className="w-full border border-line px-4 py-3 text-sm bg-white focus:outline-none focus:border-maroon"
           />
         </div>

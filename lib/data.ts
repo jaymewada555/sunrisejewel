@@ -7,7 +7,7 @@ export type Category =
   | "Nosepins"
   | "Anklets";
 
-export type Metal = "Yellow Gold" | "Rose Gold" | "White Gold" | "Platinum";
+export type Metal = "Yellow Gold" | "Rose Gold" | "White Gold";
 
 export type Occasion = "Bridal" | "Everyday" | "Gifting" | "Statement";
 
@@ -40,7 +40,7 @@ export const products: Product[] = [
     id: "aurora-solitaire-ring",
     name: "Aurora Solitaire Ring",
     category: "Rings",
-    metal: "Platinum",
+    metal: "White Gold",
     occasion: "Bridal",
     image: "/images/products/aurora-solitaire-ring.jpg",
     price: "₹68,500",
@@ -110,7 +110,7 @@ export const products: Product[] = [
     id: "veil-drop-earrings",
     name: "Veil Drop Earrings",
     category: "Earrings",
-    metal: "Platinum",
+    metal: "White Gold",
     occasion: "Bridal",
     image: "/images/products/veil-drop-earrings.jpg",
     price: "₹67,100",

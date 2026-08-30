@@ -116,12 +116,11 @@ export default function Collections() {
               leading-relaxed
             "
           >
-            Explore our selection of diamonds, each chosen for its beauty,
-            character and brilliance.
+            A curated collection of diamonds, chosen for beauty and brilliance.
           </p>
 
           {/* Gold divider */}
-
+{/* 
           <div className="flex items-center justify-center gap-3 mt-6">
 
             <span className="w-12 h-px bg-gold/30" />
@@ -136,7 +135,7 @@ export default function Collections() {
 
             <span className="w-12 h-px bg-gold/30" />
 
-          </div>
+          </div> */}
 
         </Reveal>
 

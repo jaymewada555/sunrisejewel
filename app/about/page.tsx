@@ -141,7 +141,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section bg-blush/50">
+      {/* <section className="section bg-blush/50">
         <div className="container-lg">
           <Reveal className="text-center mb-14">
             <span className="eyebrow">Craft</span>
@@ -179,7 +179,7 @@ export default function AboutPage() {
             </Reveal>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

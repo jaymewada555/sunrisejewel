@@ -5,10 +5,9 @@ import { ListFilter, MessageCircle, Sparkles, X } from "lucide-react";
 import { useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Reveal from "@/components/Reveal";
-import { products, categories, type Category, type Metal, type Occasion } from "@/lib/data";
+import { products, categories, type Category, type Metal } from "@/lib/data";
 
-const metals: Metal[] = ["Yellow Gold", "Rose Gold", "White Gold", "Platinum"];
-const occasions: Occasion[] = ["Bridal", "Everyday", "Gifting", "Statement"];
+const metals: Metal[] = ["Yellow Gold", "Rose Gold", "White Gold"];
 
 function FilterPill({
   label,
@@ -36,21 +35,17 @@ export default function ProductsExplorer() {
     (searchParams.get("category") as Category) || "All"
   );
   const [metal, setMetal] = useState<Metal | "All">("All");
-  const [occasion, setOccasion] = useState<Occasion | "All">(
-    (searchParams.get("occasion") as Occasion) || "All"
-  );
   const [filterOpen, setFilterOpen] = useState(false);
 
   const filtered = useMemo(() => {
     return products.filter((p) => {
       if (category !== "All" && p.category !== category) return false;
       if (metal !== "All" && p.metal !== metal) return false;
-      if (occasion !== "All" && p.occasion !== occasion) return false;
       return true;
     });
-  }, [category, metal, occasion]);
+  }, [category, metal]);
 
-  const hasActiveFilters = category !== "All" || metal !== "All" || occasion !== "All";
+  const hasActiveFilters = category !== "All" || metal !== "All";
 
   return (
     <section className="catalog-page section">
@@ -76,7 +71,6 @@ export default function ProductsExplorer() {
                   onClick={() => {
                     setCategory("All");
                     setMetal("All");
-                    setOccasion("All");
                   }}
                   className="flex items-center gap-1 text-[0.7rem] font-medium uppercase tracking-[0.18em] text-maroon hover:text-maroon-deep"
                 >
@@ -111,15 +105,6 @@ export default function ProductsExplorer() {
                 </div>
               </div>
 
-              <div>
-                <p className="catalog-filter-label">Occasion</p>
-                <div className="catalog-filter-group">
-                  <FilterPill label="All" active={occasion === "All"} onClick={() => setOccasion("All")} />
-                  {occasions.map((o) => (
-                    <FilterPill key={o} label={o} active={occasion === o} onClick={() => setOccasion(o)} />
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </Reveal>
@@ -167,13 +152,13 @@ export default function ProductsExplorer() {
                         <span className="product-badge">New</span>
                       </div>
 
-                      <h3 className="product-title font-display text-[1.7rem] leading-none text-ink mt-3">
+                      <h3 className="product-title font-display text-[1.3rem] leading-none text-ink mt-3">
                         {product.name}
                       </h3>
 
-                      <p className="text-sm text-ink-soft mt-2 leading-relaxed">
+                      {/* <p className="text-sm text-ink-soft mt-2 leading-relaxed">
                         {product.blurb}
-                      </p>
+                      </p> */}
 
                       <div className="product-footer">
                         {/* <span className="product-price">{product.price}</span> */}

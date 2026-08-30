@@ -72,17 +72,16 @@ export default function WaysToShop() {
               leading-relaxed
             "
           >
-            Discover a more personal way to shop fine jewellery —
-            online, in store, or from the comfort of your home.
+            {/*describe */}
           </p>
 
-          <div className="flex items-center justify-center gap-3 mt-6">
+          {/* <div className="flex items-center justify-center gap-3 mt-6">
             <span className="w-10 h-px bg-gold/30" />
 
             <Sparkles className="w-3.5 h-3.5 text-gold" />
 
             <span className="w-10 h-px bg-gold/30" />
-          </div>
+          </div> */}
 
         </Reveal>
 
@@ -263,8 +262,7 @@ export default function WaysToShop() {
                   max-w-[17rem]
                 "
               >
-                Connect with our jewellery stylists online and
-                discover the perfect piece from home.
+               
               </p>
 
               <Link
@@ -444,10 +442,10 @@ export default function WaysToShop() {
                   leading-tight
                 "
               >
-                Talk to an
+                1-on-1
                 <br />
                 <span className="italic font-light">
-                  Expert
+                  Consultant
                 </span>
               </h3>
 
@@ -460,8 +458,7 @@ export default function WaysToShop() {
                   max-w-[17rem]
                 "
               >
-                Speak with a jewellery expert and get personalised guidance
-                on diamonds, designs, and the right piece for your occasion.
+               
               </p>
 
               <Link
@@ -507,7 +504,7 @@ export default function WaysToShop() {
           {/* =====================================================
               3. TRY AT HOME
           ====================================================== */}
-
+{/* 
           <Reveal
             delay={0.16}
             className="
@@ -526,7 +523,6 @@ export default function WaysToShop() {
             "
           >
 
-            {/* Image */}
 
             <img
               src="/images/products/featherline-tennis-bracelet.jpg"
@@ -547,7 +543,7 @@ export default function WaysToShop() {
               "
             />
 
-            {/* Desktop fade */}
+     
 
             <div
               className="
@@ -563,7 +559,7 @@ export default function WaysToShop() {
               "
             />
 
-            {/* Mobile overlay */}
+           
 
             <div
               className="
@@ -577,7 +573,7 @@ export default function WaysToShop() {
               "
             />
 
-            {/* Shine */}
+            
 
             <div
               className="
@@ -597,7 +593,7 @@ export default function WaysToShop() {
               "
             />
 
-            {/* Content */}
+            
 
             <div
               className="
@@ -705,7 +701,7 @@ export default function WaysToShop() {
 
             </div>
 
-          </Reveal>
+          </Reveal> */}
 
         </div>
 

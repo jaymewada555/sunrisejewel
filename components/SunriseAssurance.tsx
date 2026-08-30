@@ -20,7 +20,7 @@ const assurances = [
   },
   {
     icon: RefreshCcw,
-    title: "Easy Exchange",
+    title: "100% Exchange",
     description: "Simple & transparent exchange",
   },
   {
@@ -248,7 +248,7 @@ export default function SunriseAssurance() {
             <span className="h-px w-16 bg-[#eadfce]" />
 
             <span className="font-serif text-xs italic text-[#b18a52]">
-              Made to shine. Made to last.
+              * T & C Apply.
             </span>
 
             <span className="h-px w-16 bg-[#eadfce]" />

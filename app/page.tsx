@@ -2,10 +2,10 @@ import HeroSlider from "@/components/HeroSlider";
 import Categories from "@/components/Categories";
 import PromoBanners from "@/components/PromoBanners";
 import Collections from "@/components/Collections";
-import FeaturedProducts from "@/components/FeaturedProducts";
+// import FeaturedProducts from "@/components/FeaturedProducts";
 import WaysToShop from "@/components/WaysToShop";
-import WhyChooseUs from "@/components/WhyChooseUs";
-import CTABanner from "@/components/CTABanner";
+// import WhyChooseUs from "@/components/WhyChooseUs";
+// import CTABanner from "@/components/CTABanner";
 import CustomersSlider from "@/components/CustomersSlider";
 // import VideoStoriesSlider from "@/components/VideoStoriesSlider";
 import SubscriptionPopup from "@/components/SubscriptionPopup";
@@ -18,11 +18,11 @@ export default function Home() {
       <Categories />
       <PromoBanners />
       <Collections />
-      <FeaturedProducts />
+      {/* <FeaturedProducts /> */}
       <SunriseAssurance  />
       <WaysToShop />
-      <WhyChooseUs />
-      <CTABanner />
+      {/* <WhyChooseUs /> */}
+      {/* <CTABanner /> */}
       <CustomersSlider />
       <SubscriptionPopup />
     </>

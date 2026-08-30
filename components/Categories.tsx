@@ -354,7 +354,7 @@ export default function Categories() {
 
                       {/* =========================
                           BOTTOM LABEL
-                      ========================== */}
+                      ========================== 
 
                       <div
                         className="
@@ -400,7 +400,7 @@ export default function Categories() {
                           →
                         </span>
 
-                      </div>
+                      </div> */}
 
                     </Link>
 

@@ -161,26 +161,22 @@ export const products: Product[] = [
 export const testimonials = [
   {
     quote:
-      "The jewellery is beyond beautiful. Excellent quality and amazing service — my solitaire looks even better in person.",
-    name: "Priya S.",
-    place: "Bengaluru",
+      "I had a wonderful experience with Sunrise Diamond & Jewels. The collection was beautiful. I truly appreciated the excellent service and attention to detail. Highly recommended for anyone looking for quality jewellery and a pleasant shopping experience! ⭐⭐⭐⭐⭐",
+    name: "Aditi Godkar",
   },
   {
     quote:
-      "We customised a mangalsutra for our anniversary. The team shared CAD designs at every step and delivered before time.",
-    name: "Rahul M.",
-    place: "Pune",
+      "I bought earrings and a diamond ring from Sunrise Diamond & Jewels. The piece is beautifully crafted and I love the product. I also loved how they interact with clients. I will buy more in the future.",
+    name: "Nagesh Shetty",
   },
   {
     quote:
-      "Bought lab-grown earrings — certified, brilliant, and half the price of what I was quoted elsewhere.",
-    name: "Aisha K.",
-    place: "Delhi",
+      "My experience with Sunrise Diamond & Jewels was excellent. I like their products; they are newly designed with excellent choices, and their price is right. Affordable and unique.",
+    name: "Mrs. Heena Patel",
   },
   {
     quote:
-      "Our engagement ring was true to sketch. Transparent pricing and honest guidance through the whole process.",
-    name: "Neha & Arjun",
-    place: "Mumbai",
+      "Absolutely loved my experience with Sunrise Diamond & Jewels. The jewellery is elegant, beautifully crafted, and has a luxurious finish. The team was extremely warm and helpful throughout. 😍👍",
+    name: "Prisha",
   },
 ];

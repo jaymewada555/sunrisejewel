@@ -13,21 +13,21 @@ const slides = [
     desktopAlt: "Luxury diamond jewellery collection",
     mobileAlt: "Luxury diamond jewellery",
   },
-  {
-    desktop: "/images/products/cascade-choker-necklace.jpg",
-    mobile: "/images/products/cascade-choker-necklace.jpg",
+  // {
+  //   desktop: "/images/products/cascade-choker-necklace.jpg",
+  //   mobile: "/images/products/cascade-choker-necklace.jpg",
 
-    desktopAlt: "Elegant gold and diamond jewellery",
-    mobileAlt: "Elegant diamond ring",
-  },
+  //   desktopAlt: "Elegant gold and diamond jewellery",
+  //   mobileAlt: "Elegant diamond ring",
+  // },
 
-  {
-    desktop: "/images/products/featherline-tennis-bracelet.jpg",
-    mobile: "/images/products/featherline-tennis-bracelet.jpg",
+  // {
+  //   desktop: "/images/products/featherline-tennis-bracelet.jpg",
+  //   mobile: "/images/products/featherline-tennis-bracelet.jpg",
 
-    desktopAlt: "Premium jewellery collection",
-    mobileAlt: "Diamond jewellery close up",
-  },
+  //   desktopAlt: "Premium jewellery collection",
+  //   mobileAlt: "Diamond jewellery close up",
+  // },
 ];
 
 export default function HeroSlider() {

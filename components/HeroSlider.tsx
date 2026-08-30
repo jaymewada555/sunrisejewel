@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 const slides = [
   {
-    desktop: "/images/products/aurora-solitaire-ring.jpg",
-    mobile: "/images/products/aurora-solitaire-ring.jpg",
+    desktop: "/images/sliders/banner1.png",
+    mobile: "/images/sliders/mbanner1.png",
 
     desktopAlt: "Luxury diamond jewellery collection",
     mobileAlt: "Luxury diamond jewellery",

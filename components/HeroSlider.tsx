@@ -90,11 +90,13 @@ export default function HeroSlider() {
                 className="
                   relative
                   mx-auto
-                  min-h-[650px]
+                  min-h-[420px]
                   max-w-[1700px]
-                  px-4
-                  py-5
+                  px-3
+                  py-3
+                  sm:min-h-[500px]
                   sm:px-6
+                  lg:min-h-[650px]
                   lg:px-10
                   lg:py-7
                 "
@@ -107,11 +109,14 @@ export default function HeroSlider() {
                 <div
                   className="
                     relative
-                    min-h-[620px]
+                    min-h-[380px]
                     overflow-hidden
-                    rounded-[28px]
+                    rounded-[22px]
                     bg-[#ded1bd]
                     shadow-[0_30px_90px_rgba(57,39,25,0.16)]
+                    sm:min-h-[470px]
+                    sm:rounded-[28px]
+                    lg:min-h-[620px]
                   "
                 >
 

@@ -124,12 +124,15 @@ export default function WaysToShop() {
                 right-0
                 top-0
                 h-full
-                w-[46%]
+                w-full
                 object-cover
+                opacity-70
                 transition-transform
                 duration-[1400ms]
                 ease-out
                 group-hover:scale-110
+                sm:w-[46%]
+                sm:opacity-100
               "
             />
 
@@ -187,9 +190,11 @@ export default function WaysToShop() {
               className="
                 relative
                 z-10
-                p-8
+                w-full
+                p-6
+                sm:w-[70%]
+                sm:p-8
                 md:p-9
-                w-[70%]
               "
             >
 

@@ -53,10 +53,10 @@ export default function PromoBanners() {
                 relative
                 block
                 overflow-hidden
-                min-h-[430px]
-                md:min-h-[520px]
+                min-h-[340px]
                 rounded-[24px]
                 bg-[#3f0c15]
+                md:min-h-[520px]
               "
             >
 

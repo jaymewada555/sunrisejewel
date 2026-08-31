@@ -10,6 +10,7 @@ import CustomersSlider from "@/components/CustomersSlider";
 // import VideoStoriesSlider from "@/components/VideoStoriesSlider";
 import SubscriptionPopup from "@/components/SubscriptionPopup";
 import SunriseAssurance from "@/components/SunriseAssurance";
+import LabGrownVsNatural from "@/components/LabGrownVsNatural";
 
 export default function Home() {
   return (
@@ -19,7 +20,8 @@ export default function Home() {
       <PromoBanners />
       <Collections />
       {/* <FeaturedProducts /> */}
-      <SunriseAssurance  />
+      <LabGrownVsNatural />
+      <SunriseAssurance />
       <WaysToShop />
       {/* <WhyChooseUs /> */}
       {/* <CTABanner /> */}

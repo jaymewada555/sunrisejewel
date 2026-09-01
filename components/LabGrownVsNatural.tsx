@@ -1,4 +1,16 @@
-import { ArrowRight, Gem, Leaf, MountainSnow, Sparkles, Star } from "lucide-react";
+import {
+  ArrowRight,
+  BadgeCheck,
+  Coins,
+  Factory,
+  Gem,
+  Leaf,
+  MountainSnow,
+  ShieldCheck,
+  Sparkles,
+  Star,
+  TreePine,
+} from "lucide-react";
 
 const labFeatures = [
   {
@@ -38,6 +50,87 @@ const naturalFeatures = [
 
 const labSplashImage = "/images/aboutus/daimond_001.png";
 const naturalSplashImage = "/images/aboutus/daimond_002.png";
+
+const comparisonRows = [
+  {
+    icon: Factory,
+    label: "Origin",
+    lab: "Created in a controlled laboratory environment using advanced technology.",
+    natural: "Formed naturally deep within the Earth over millions to billions of years and recovered through mining.",
+  },
+  {
+    icon: Gem,
+    label: "Composition",
+    lab: "Pure carbon, with the same fundamental chemical composition as natural diamonds.",
+    natural: "Pure carbon, crystallized naturally under extreme heat and pressure.",
+  },
+  {
+    icon: Sparkles,
+    label: "Brilliance",
+    lab: "Exceptionally high brilliance and sparkle.",
+    natural: "Exceptionally high brilliance and sparkle.",
+  },
+  {
+    icon: Star,
+    label: "Fire (Dispersion)",
+    lab: "High — produces beautiful flashes of spectral colors.",
+    natural: "High — produces beautiful flashes of spectral colors.",
+  },
+  {
+    icon: BadgeCheck,
+    label: "Color",
+    lab: "Available in a variety of colors, including colorless and fancy colors.",
+    natural: "Available in colorless, near-colorless, and naturally occurring fancy colors.",
+  },
+  {
+    icon: ShieldCheck,
+    label: "Clarity",
+    lab: "Available across a range of clarity grades; many stones can appear eye-clean.",
+    natural: "Natural inclusions and characteristics may be present, making each stone distinctive.",
+  },
+  {
+    icon: Gem,
+    label: "Hardness",
+    lab: "10 on the Mohs scale, making it highly durable for everyday wear.",
+    natural: "10 on the Mohs scale, making it the hardest natural gemstone.",
+  },
+  {
+    icon: Coins,
+    label: "Price",
+    lab: "Generally more affordable than comparable natural diamonds.",
+    natural: "Typically commands a higher price due to natural rarity, mining, and market demand.",
+  },
+  {
+    icon: Leaf,
+    label: "Ethical & Environmental Considerations",
+    lab: "Avoids traditional diamond mining; environmental impact depends on how the diamond is produced and the energy source used.",
+    natural: "Requires mining, which can have environmental and social impacts; responsible sourcing can help address these concerns.",
+  },
+  {
+    icon: BadgeCheck,
+    label: "Grading & Certification",
+    lab: "Can be independently graded and certified by recognized gemological laboratories using established diamond-grading standards.",
+    natural: "Graded and certified by recognized gemological laboratories using established diamond-grading standards.",
+  },
+  {
+    icon: Sparkles,
+    label: "Market Availability",
+    lab: "Increasingly available in a wide range of shapes, sizes, colors, and qualities.",
+    natural: "Widely available through the established global diamond market.",
+  },
+  {
+    icon: Star,
+    label: "Popularity",
+    lab: "Growing in popularity among customers seeking value, modern innovation, and an alternative to mined diamonds.",
+    natural: "Traditionally valued for their rarity, natural origin, heritage, and long-standing desirability.",
+  },
+  {
+    icon: TreePine,
+    label: "Uniqueness",
+    lab: "Each lab-grown diamond has its own characteristics, while its origin is created through a controlled process.",
+    natural: "Each natural diamond has unique characteristics shaped by its individual geological journey.",
+  },
+];
 
 export default function LabGrownVsNatural() {
   return (
@@ -97,13 +190,6 @@ export default function LabGrownVsNatural() {
                   );
                 })}
               </div>
-
-              {/* <div className="mt-8 flex justify-center">
-                <button className="inline-flex items-center gap-2 border border-[#c78d7c] bg-transparent px-5 py-3 text-[10px] font-medium uppercase tracking-[0.22em] text-[#7a4d43] transition hover:bg-[#fff6f4] md:text-[11px]">
-                  Explore Lab-Grown Diamonds
-                  <ArrowRight className="h-4 w-4" strokeWidth={1.8} />
-                </button>
-              </div> */}
             </div>
 
             <div className="relative z-10 mt-7 flex justify-center">
@@ -159,13 +245,6 @@ export default function LabGrownVsNatural() {
                   );
                 })}
               </div>
-
-              {/* <div className="mt-8 flex justify-center">
-                <button className="inline-flex items-center gap-2 border border-[#7d9ab7] bg-transparent px-5 py-3 text-[10px] font-medium uppercase tracking-[0.22em] text-[#496883] transition hover:bg-[#edf6ff] md:text-[11px]">
-                  Explore Natural Diamonds
-                  <ArrowRight className="h-4 w-4" strokeWidth={1.8} />
-                </button>
-              </div> */}
             </div>
 
             <div className="relative z-10 mt-7 flex justify-center">
@@ -178,6 +257,41 @@ export default function LabGrownVsNatural() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="mt-10 overflow-hidden rounded-[28px] border border-[#e0d1bf] bg-[rgba(255,255,255,0.35)] shadow-[0_18px_35px_rgba(76,51,28,0.05)] backdrop-blur-[2px]">
+          <div className="hidden border-b border-[#e7d9c7] bg-[#f8f0e7] px-4 py-3 text-[10px] font-medium uppercase tracking-[0.28em] text-[#7a5347] md:grid md:grid-cols-[1.2fr_1fr_1fr]">
+            <div>Feature</div>
+            <div className="text-center">Lab-Grown</div>
+            <div className="text-center">Natural</div>
+          </div>
+
+          <div className="divide-y divide-[#eadcc8]">
+            {comparisonRows.map((row) => {
+              const Icon = row.icon;
+
+              return (
+                <div key={row.label} className="grid gap-3 px-4 py-4 md:grid-cols-[1.2fr_1fr_1fr] md:gap-5 md:px-6 md:py-5">
+                  <div className="flex items-center gap-3 text-[#3b2920]">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-full border border-[#d7b7a6] bg-[#f7e9e3] text-[#b76b5f]">
+                      <Icon className="h-4 w-4" strokeWidth={1.8} />
+                    </div>
+                    <span className="font-display text-[16px] leading-none tracking-[-0.03em] md:text-[18px]">
+                      {row.label}
+                    </span>
+                  </div>
+
+                  <p className="text-[12px] leading-6 text-[#5e4f49] md:text-center md:text-[12.5px]">
+                    {row.lab}
+                  </p>
+
+                  <p className="text-[12px] leading-6 text-[#596d7f] md:text-center md:text-[12.5px]">
+                    {row.natural}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

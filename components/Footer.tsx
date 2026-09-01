@@ -32,7 +32,7 @@ function YoutubeIcon() {
 export default function Footer() {
   return (
     <footer className="relative bg-maroon-deep text-cream/90">
-  <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-light/60 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-[1.5px] bg-[#d7b77a] shadow-[0_0_12px_rgba(215,183,122,0.7)]" />
 
       <div className="container-lg pt-16 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr_1.2fr] gap-12">
@@ -87,15 +87,15 @@ export default function Footer() {
             <ul className="space-y-3.5 text-sm text-cream/70">
               <li className="flex items-start gap-2.5">
                 <Phone className="w-4 h-4 mt-0.5 shrink-0" strokeWidth={1.6} />
-                +91 70218 11747
+                <a href="tel:+918424000907" className="hover:text-cream transition-colors">+91 84240 00907</a>
               </li>
               <li className="flex items-start gap-2.5">
                 <Mail className="w-4 h-4 mt-0.5 shrink-0" strokeWidth={1.6} />
-                hello@sunrisediamonds.com
+                <a href="mailto:Support@sunrisejewels.co.in" className="hover:text-cream transition-colors">Support@sunrisejewels.co.in</a>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" strokeWidth={1.6} />
-                123 Diamond Street, Mumbai, India
+                Andheri (west), Mumbai, India
               </li>
               <li className="flex items-start gap-2.5">
                 <Clock className="w-4 h-4 mt-0.5 shrink-0" strokeWidth={1.6} />
@@ -105,7 +105,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="hairline my-10 opacity-20" />
+        <div className="my-10 h-[1.5px] w-full bg-[#d7b77a] shadow-[0_0_10px_rgba(215,183,122,0.5)]" />
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-cream/55">
           <p>© {new Date().getFullYear()} Sunrise Diamond &amp; Jewels Pvt Ltd. All rights reserved.</p>

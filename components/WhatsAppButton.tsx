@@ -5,7 +5,7 @@ export default function WhatsAppButton({
 }: {
   message?: string;
 }) {
-  const href = `https://wa.me/917021811747?text=${encodeURIComponent(message)}`;
+  const href = `https://wa.me/918424000907?text=${encodeURIComponent(message)}`;
   return (
     <a
       href={href}

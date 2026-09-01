@@ -21,7 +21,7 @@ export default function BookingForm() {
       `Interested in: ${interest || "-"}`,
       notes ? `Notes: ${notes}` : "",
     ].filter(Boolean);
-    const url = `https://wa.me/917021811747?text=${encodeURIComponent(lines.join("\n"))}`;
+    const url = `https://wa.me/918424000907?text=${encodeURIComponent(lines.join("\n"))}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
 

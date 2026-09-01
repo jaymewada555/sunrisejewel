@@ -59,7 +59,7 @@ export default function Header() {
 
           {/* Phone */}
           <a
-            href="tel:+917021811747"
+            href="tel:+918424000907"
             className="flex items-center gap-2 text-xs text-ink-soft hover:text-maroon transition-colors"
           >
             <Phone
@@ -67,7 +67,7 @@ export default function Header() {
               strokeWidth={1.6}
             />
 
-            +91 70218 11747
+            +91 84240 00907
           </a>
 
         </div>
@@ -109,7 +109,7 @@ export default function Header() {
 
             {/* Phone */}
             <a
-              href="tel:+917021811747"
+              href="tel:+918424000907"
               className="flex items-center gap-2 text-sm text-ink-soft"
             >
               <Phone
@@ -117,7 +117,7 @@ export default function Header() {
                 strokeWidth={1.6}
               />
 
-              +91 70218 11747
+              +91 84240 00907
             </a>
 
           </nav>

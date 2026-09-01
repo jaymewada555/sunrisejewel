@@ -21,9 +21,9 @@ export default function CTABanner() {
             <Link href="/book-us" className="btn-outline-light">
               <Video className="w-3.5 h-3.5" /> Book Video Call
             </Link>
-            <Link href="/book-us" className="btn-primary !bg-gold !border-gold !text-maroon-deep hover:!bg-gold-light">
+            <a href="tel:+918424000907" className="btn-primary !bg-gold !border-gold !text-maroon-deep hover:!bg-gold-light">
               <PhoneCall className="w-3.5 h-3.5" /> Talk to an Expert
-            </Link>
+            </a>
           </div>
         </Reveal>
       </div>

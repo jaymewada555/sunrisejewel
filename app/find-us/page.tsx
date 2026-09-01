@@ -64,15 +64,15 @@ export default function BookUsPage() {
             <div className="space-y-4 text-sm text-ink-soft">
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-gold" strokeWidth={1.6} />
-                +91 70218 11747
+                <a href="tel:+918424000907" className="hover:text-maroon transition-colors">+91 84240 00907</a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-gold" strokeWidth={1.6} />
-                hello@sunrisediamonds.com
+                <a href="mailto:Support@sunrisejewels.co.in" className="hover:text-maroon transition-colors">Support@sunrisejewels.co.in</a>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-gold" strokeWidth={1.6} />
-                123 Diamond Street, Mumbai, India
+                Andheri (west), Mumbai, India
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-4 h-4 text-gold" strokeWidth={1.6} />

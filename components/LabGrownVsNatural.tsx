@@ -41,7 +41,7 @@ const naturalSplashImage = "/images/aboutus/daimond_002.png";
 
 export default function LabGrownVsNatural() {
   return (
-    <section className="section relative overflow-hidden bg-[#faf7f3] px-4 sm:px-6 lg:px-10">
+    <section className="section relative overflow-hidden bg-[radial-gradient(circle_at_top_left,#fffaf6_0%,#f9f0ea_28%,#f2e5dc_60%,#eadfd4_100%)] px-4 sm:px-6 lg:px-10">
       <div className="container-lg relative z-10">
         <div className="mb-8 text-center md:mb-12">
           <span className="eyebrow">Discover the difference</span>

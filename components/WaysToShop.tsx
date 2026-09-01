@@ -466,8 +466,8 @@ export default function WaysToShop() {
                
               </p>
 
-              <Link
-                href="/book-us"
+              <a
+                href="tel:+918424000907"
                 className="
                   inline-flex
                   items-center
@@ -499,7 +499,7 @@ export default function WaysToShop() {
                     group-hover:translate-x-1
                   "
                 />
-              </Link>
+              </a>
 
             </div>
 

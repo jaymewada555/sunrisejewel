@@ -17,16 +17,16 @@ export default function Home() {
     <>
       <HeroSlider />
       <Categories />
-      {/* <PromoBanners /> */}
       <LabGrownVsNatural />
       <Collections />
-      {/* <FeaturedProducts /> */}
       <SunriseAssurance />
       <WaysToShop />
-      {/* <WhyChooseUs /> */}
-      {/* <CTABanner /> */}
       <CustomersSlider />
       <SubscriptionPopup />
+      {/* <FeaturedProducts /> */}
+      {/* <PromoBanners /> */}
+      {/* <WhyChooseUs /> */}
+      {/* <CTABanner /> */}
     </>
   );
 }

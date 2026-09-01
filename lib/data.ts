@@ -3,8 +3,11 @@ export type Category =
   | "Rings"
   | "Necklaces"
   | "Earrings"
-  | "Bangles"
+  | "Pendants"
+  | "Chain Pendant"
+  | "Necklace"
   | "Nosepins"
+  | "Bangles"
   | "Anklets";
 
 export type Metal = "Yellow Gold" | "Rose Gold" | "White Gold";
@@ -22,17 +25,48 @@ export type Product = {
   blurb: string;
 };
 
+// export const categories: { name: Category; image: string }[] = [
+//   { name: "Rings", image: "/images/products/aurora-solitaire-ring.jpg" },
+//   {
+//     name: "Bracelets",
+//     image: "/images/products/featherline-tennis-bracelet.jpg",
+//   },
+//   { name: "Necklaces", image: "/images/products/cascade-choker-necklace.jpg" },
+//   { name: "Earrings", image: "/images/products/veil-drop-earrings.jpg" },
+//   { name: "Bangles", image: "/images/products/sunray-bangle-set.jpg" },
+//   { name: "Nosepins", image: "/images/products/estelle-nosepin.jpg" },
+//   { name: "Anklets", image: "/images/products/tidal-anklet.jpg" },
+// ];
+
 export const categories: { name: Category; image: string }[] = [
-  { name: "Rings", image: "/images/products/aurora-solitaire-ring.jpg" },
+  {
+    name: "Rings",
+    image: "/images/products/Creatives/1 (32).jpg",
+  },
+  {
+    name: "Earrings",
+    image: "/images/products/Creatives/EER6666 (15).jpg",
+  },
+  {
+    name: "Pendants",
+    image: "/images/products/Creatives/PD (53).png",
+  },
+  {
+    name: "Chain Pendant",
+    image: "/images/products/Creatives/PD (28).png",
+  },
+  {
+    name: "Necklace",
+    image: "/images/products/Creatives/PD (54).png",
+  },
   {
     name: "Bracelets",
-    image: "/images/products/featherline-tennis-bracelet.jpg",
+    image: "/images/products/Creatives/PD (35).png",
   },
-  { name: "Necklaces", image: "/images/products/cascade-choker-necklace.jpg" },
-  { name: "Earrings", image: "/images/products/veil-drop-earrings.jpg" },
-  { name: "Bangles", image: "/images/products/sunray-bangle-set.jpg" },
-  { name: "Nosepins", image: "/images/products/estelle-nosepin.jpg" },
-  { name: "Anklets", image: "/images/products/tidal-anklet.jpg" },
+  {
+    name: "Nosepins",
+    image: "/images/products/Creatives/PD (38).png",
+  },
 ];
 
 export const products: Product[] = [

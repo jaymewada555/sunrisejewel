@@ -116,7 +116,7 @@ export default function WaysToShop() {
             {/* Image */}
 
             <img
-              src="/images/products/dewdrop-pendant-necklace.jpg"
+              src="/images/aboutus/video.png"
               alt="Luxury jewellery virtual consultation"
               loading="lazy"
               className="
@@ -323,7 +323,7 @@ export default function WaysToShop() {
             {/* Image */}
 
             <img
-              src="/images/products/cascade-choker-necklace.jpg"
+              src="/images/aboutus/talk.png"
               alt="Luxury jewellery showroom"
               loading="lazy"
               className="

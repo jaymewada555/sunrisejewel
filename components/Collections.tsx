@@ -11,7 +11,7 @@ const collections = [
     occasion: "Diamond Type",
     description:
       "A romantic silhouette with distinctive facets that make every glance feel personal.",
-    image: "/images/products/JPG/R (1).jpg",
+    image: "/images/aboutus/heart.png",
     position: "center",
   },
   {
@@ -19,7 +19,7 @@ const collections = [
     occasion: "Diamond Type",
     description:
       "A graceful teardrop profile that brings elegant length and luminous movement.",
-    image: "/images/products/JPG/R (100).jpg",
+    image: "/images/aboutus/pear.png",
     position: "center",
   },
   {
@@ -27,7 +27,7 @@ const collections = [
     occasion: "Diamond Type",
     description:
       "Clean step-cut facets with a refined, architectural glow and quiet confidence.",
-    image: "/images/products/JPG/1 (10).jpg",
+    image: "/images/aboutus/emerald.png",
     position: "center",
   },
   {
@@ -35,7 +35,7 @@ const collections = [
     occasion: "Diamond Type",
     description:
       "The classic choice for maximum fire, sparkle and timeless diamond elegance.",
-    image: "/images/products/JPG/ER343 (10).jpg",
+    image: "/images/aboutus/round.png",
     position: "center",
   },
 ];
@@ -174,7 +174,7 @@ export default function Collections() {
             >
 
               <Link
-                href="/products"
+                href="#"
                 className="
                   group
                   relative
@@ -390,7 +390,7 @@ export default function Collections() {
 
 
                     {/* Description */}
-
+{/* 
                     <p
                       className="
                         text-white/60
@@ -410,12 +410,12 @@ export default function Collections() {
                       "
                     >
                       {c.description}
-                    </p>
+                    </p> */}
 
 
                     {/* Explore */}
 
-                    <div
+                    {/* <div
                       className="
                         flex
                         items-center
@@ -443,7 +443,7 @@ export default function Collections() {
                           group-hover:translate-x-1
                         "
                       />
-                    </div>
+                    </div> */}
 
                   </div>
 
@@ -478,12 +478,9 @@ export default function Collections() {
               text-xs
               uppercase
               tracking-[0.2em]
-              border-b
-              border-maroon/30
-              pb-2
+              mb-[10px]
               transition-all
               duration-300
-              hover:border-gold
               hover:text-gold
               hover:gap-4
             "

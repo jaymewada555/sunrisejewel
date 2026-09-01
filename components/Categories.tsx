@@ -6,17 +6,16 @@ import { categories } from "@/lib/data";
 import Reveal from "@/components/Reveal";
 
 const categoryImages: Record<string, string> = {
-  Rings: "/images/products/aurora-solitaire-ring.jpg",
-  Necklaces: "/images/products/cascade-choker-necklace.jpg",
-  Earrings: "/images/products/veil-drop-earrings.jpg",
-  Bracelets: "/images/products/featherline-tennis-bracelet.jpg",
-  Pendants: "/images/products/dewdrop-pendant-necklace.jpg",
-  Bangles: "/images/products/sunray-bangle-set.jpg",
-  Mangalsutra: "/images/products/kada-heritage-bracelet.jpg",
-  "Bridal Jewellery": "/images/products/meridian-halo-ring.jpg",
+  Rings: "/images/products/Creatives/1 (32).jpg",
+  Earrings: "/images/products/Creatives/EER6666 (15).png",
+  Pendants: "/images/products/Creatives/PD (53).png",
+  Necklace : "/images/products/Creatives/PD (29).png",
+  "Chain Pendant": "/images/products/Creatives/PD (28).png",
+  "Nosepins": "/images/products/Creatives/PD (38).png",
+  Bracelets: "/images/products/Creatives/PD (35).png",
 };
 
-const fallbackImage = "/images/products/aurora-solitaire-ring.jpg";
+const fallbackImage = "/images/products/Creatives/1 (32).jpg";
 
 export default function Categories() {
   const [emblaRef] = useEmblaCarousel({

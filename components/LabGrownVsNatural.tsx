@@ -1,9 +1,15 @@
 import {
   ArrowRight,
+  Atom,
   BadgeCheck,
+  BadgeDollarSign,
+  BadgePercent,
   Coins,
+  Crown,
   Factory,
   Gem,
+  HeartHandshake,
+  Landmark,
   Leaf,
   MountainSnow,
   ShieldCheck,
@@ -14,7 +20,7 @@ import {
 
 const labFeatures = [
   {
-    icon: Sparkles,
+    icon: Atom,
     title: "Pure Carbon",
     description: "Chemically, physically & optically identical",
   },
@@ -24,12 +30,16 @@ const labFeatures = [
     description: "Conflict-free and eco-conscious choice",
   },
   {
-    icon: Gem,
+    icon: BadgePercent,
     title: "Exceptional Value",
     description: "Premium beauty, more accessible",
   },
+  {
+    icon: ShieldCheck,
+    title: "Hardness",
+    description: "10 on the Mohs scale - Remarkably Durable.",
+  },
 ];
-
 const naturalFeatures = [
   {
     icon: MountainSnow,
@@ -37,14 +47,19 @@ const naturalFeatures = [
     description: "One of a kind, shaped by time & nature",
   },
   {
-    icon: Star,
+    icon: HeartHandshake,
     title: "Timeless Heritage",
     description: "A symbol of tradition, love & legacy",
   },
   {
-    icon: Gem,
+    icon: Crown,
     title: "Exquisite Rarity",
     description: "Naturally rare, eternally precious",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Hardness",
+    description: "10 on the Mohs scale — the hardest natural gemstone.",
   },
 ];
 
@@ -260,7 +275,7 @@ export default function LabGrownVsNatural() {
           </div>
         </div>
 
-        <div className="mt-10 overflow-hidden rounded-[28px] border border-[#e0d1bf] bg-[rgba(255,255,255,0.35)] shadow-[0_18px_35px_rgba(76,51,28,0.05)] backdrop-blur-[2px]">
+        {/* <div className="mt-10 overflow-hidden rounded-[28px] border border-[#e0d1bf] bg-[rgba(255,255,255,0.35)] shadow-[0_18px_35px_rgba(76,51,28,0.05)] backdrop-blur-[2px]">
           <div className="hidden border-b border-[#e7d9c7] bg-[#f8f0e7] px-4 py-3 text-[10px] font-medium uppercase tracking-[0.28em] text-[#7a5347] md:grid md:grid-cols-[1.2fr_1fr_1fr]">
             <div>Feature</div>
             <div className="text-center">Lab-Grown</div>
@@ -293,7 +308,7 @@ export default function LabGrownVsNatural() {
               );
             })}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

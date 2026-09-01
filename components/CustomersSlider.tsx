@@ -39,11 +39,11 @@ export default function CustomersSlider() {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="section relative overflow-hidden bg-maroon-deep">
+    <section className="section relative overflow-hidden bg-maroon-deep  mb-[20px]">
       <SunburstRays className="sunburst-mark w-[500px] h-[500px] text-gold-light left-1/2 -translate-x-1/2 -top-48 animate-slow-spin" />
 
       <div className="container-lg relative">
-        <Reveal className="text-center mb-14">
+        <Reveal className="text-center ">
           <span className="eyebrow text-gold-light">Real Stories</span>
           <h2 className="font-display text-3xl md:text-[2.4rem] text-cream mt-3">
             From Our Customers
@@ -76,7 +76,7 @@ export default function CustomersSlider() {
                       &ldquo;{t.quote}&rdquo;
                     </p>
                     <span className="mt-6 text-sm tracking-wide text-gold-light">
-                      {t.name} · {t.place}
+                      {t.name}
                     </span>
                   </motion.div>
                 </div>

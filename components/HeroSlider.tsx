@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 const slides = [
   {
-    desktop: "/images/sliders/banner1.png",
-    mobile: "/images/sliders/mbanner1.png",
+    desktop: "/images/sliders/banner002.png",
+    mobile: "/images/sliders/banner002.png",
 
     desktopAlt: "Luxury diamond jewellery collection",
     mobileAlt: "Luxury diamond jewellery",
@@ -90,13 +90,10 @@ export default function HeroSlider() {
                 className="
                   relative
                   mx-auto
-                  min-h-[420px]
                   max-w-[1700px]
                   px-3
                   py-3
-                  sm:min-h-[500px]
                   sm:px-6
-                  lg:min-h-[650px]
                   lg:px-10
                   lg:py-7
                 "
@@ -109,14 +106,14 @@ export default function HeroSlider() {
                 <div
                   className="
                     relative
-                    min-h-[380px]
+                    h-[420px]
                     overflow-hidden
                     rounded-[22px]
                     bg-[#ded1bd]
                     shadow-[0_30px_90px_rgba(57,39,25,0.16)]
-                    sm:min-h-[470px]
+                    sm:h-[500px]
                     sm:rounded-[28px]
-                    lg:min-h-[620px]
+                    lg:h-[650px]
                   "
                 >
 
@@ -146,27 +143,11 @@ export default function HeroSlider() {
                     "
                   >
 
-                    <picture className="block h-full w-full">
-
-                      {/* MOBILE IMAGE */}
-                      <source
-                        media="(max-width: 767px)"
-                        srcSet={slide.mobile}
-                      />
-
-                      {/* DESKTOP IMAGE */}
-                      <img
-                        src={slide.desktop}
-                        alt={slide.desktopAlt}
-                        className="
-                          h-full
-                          w-full
-                          object-cover
-                          object-center
-                        "
-                      />
-
-                    </picture>
+                    <img
+                      src={slide.desktop}
+                      alt={slide.desktopAlt}
+                      className="h-full w-full object-cover object-center"
+                    />
 
                   </motion.div>
 

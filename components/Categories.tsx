@@ -98,7 +98,7 @@ export default function Categories() {
           </p>
 
           {/* Small gold divider */}
-
+{/* 
           <div className="flex items-center justify-center gap-3 mt-6">
 
             <span className="h-px w-12 bg-gold/30" />
@@ -119,7 +119,7 @@ export default function Categories() {
             "
           >
             Drag to explore
-          </p>
+          </p> */}
 
         </Reveal>
 
@@ -417,7 +417,7 @@ export default function Categories() {
             BOTTOM HINT
         ========================== */}
 
-        <div className="flex items-center justify-center mt-10">
+        {/* <div className="flex items-center justify-center mt-10">
 
           <div className="flex items-center gap-3 text-ink-soft/60">
 
@@ -431,7 +431,7 @@ export default function Categories() {
 
           </div>
 
-        </div>
+        </div> */}
 
       </div>
 

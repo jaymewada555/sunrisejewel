@@ -45,8 +45,8 @@ export default function CustomersSlider() {
       <div className="container-lg relative">
         <Reveal className="text-center ">
           <span className="eyebrow text-gold-light">Real Stories</span>
-          <h2 className="font-display text-3xl md:text-[2.4rem] text-cream mt-3">
-            From Our Customers
+          <h2 className="font-display text-3xl md:text-[2.4rem] text-cream mt-3 mb-5">
+            Hear From Them
           </h2>
         </Reveal>
 
@@ -59,20 +59,20 @@ export default function CustomersSlider() {
                     initial={{ opacity: 0, scale: 0.96 }}
                     animate={selected === i ? { opacity: 1, scale: 1 } : { opacity: 0.4, scale: 0.96 }}
                     transition={{ duration: 0.5 }}
-                    className="flex flex-col items-center text-center px-4 md:px-14"
+                    className="mx-auto flex w-full max-w-2xl flex-col items-center justify-center text-center px-4 md:px-14"
                   >
-                    <div className="relative w-20 h-20 rounded-full bg-gradient-to-br from-gold-light to-gold flex items-center justify-center mb-6 ring-4 ring-cream/10">
+                    <div className="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-gold-light to-gold ring-4 ring-cream/10">
                       <span className="font-display text-xl text-maroon-deep">
                         {initials(t.name)}
                       </span>
                     </div>
-                    <div className="flex items-center gap-1 mb-5">
+                    <div className="mt-5 flex items-center justify-center gap-1">
                       {Array.from({ length: 5 }).map((_, s) => (
-                        <Star key={s} className="w-4 h-4 fill-gold text-gold" />
+                        <Star key={s} className="h-4 w-4 fill-gold text-gold" />
                       ))}
                     </div>
-                    <Quote className="w-6 h-6 text-gold/60 mb-4" strokeWidth={1.4} />
-                    <p className="font-display text-lg md:text-xl text-cream/90 italic leading-relaxed">
+                    <Quote className="mt-4 h-6 w-6 text-gold/60" strokeWidth={1.4} />
+                    <p className="mt-4 max-w-xl font-display text-lg leading-relaxed text-cream/90 italic md:text-xl">
                       &ldquo;{t.quote}&rdquo;
                     </p>
                     <span className="mt-6 text-sm tracking-wide text-gold-light">

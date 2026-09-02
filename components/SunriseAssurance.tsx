@@ -89,7 +89,7 @@ export default function SunriseAssurance() {
               The Sunrise Assurance
             </h2>
 
-            <p
+            {/* <p
               className="
                 mt-2
                 font-serif
@@ -100,10 +100,10 @@ export default function SunriseAssurance() {
               "
             >
               Crafted with care, cherished for a lifetime.
-            </p>
+            </p> */}
 
             {/* Decorative Line */}
-            <div className="mx-auto mt-5 flex items-center justify-center gap-3">
+            {/* <div className="mx-auto mt-5 flex items-center justify-center gap-3">
 
               <span className="h-px w-10 bg-[#d6bd91]" />
 
@@ -111,7 +111,7 @@ export default function SunriseAssurance() {
 
               <span className="h-px w-10 bg-[#d6bd91]" />
 
-            </div>
+            </div> */}
 
           </div>
 

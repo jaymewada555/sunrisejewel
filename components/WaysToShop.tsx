@@ -104,7 +104,7 @@ export default function WaysToShop() {
               overflow-hidden
               bg-white
               rounded-[26px]
-              min-h-[340px]
+              min-h-[210px]
               shadow-[0_10px_35px_rgba(63,12,21,0.06)]
               transition-all
               duration-700
@@ -198,7 +198,7 @@ export default function WaysToShop() {
               "
             >
 
-              <span
+              {/* <span
                 className="
                   w-11
                   h-11
@@ -239,7 +239,7 @@ export default function WaysToShop() {
                 "
               >
                 Personal Styling
-              </span>
+              </span> */}
 
               <h3
                 className="
@@ -311,7 +311,7 @@ export default function WaysToShop() {
               overflow-hidden
               bg-[#3f0c15]
               rounded-[26px]
-              min-h-[340px]
+              min-h-[210px]
               shadow-[0_10px_35px_rgba(63,12,21,0.08)]
               transition-all
               duration-700
@@ -394,7 +394,7 @@ export default function WaysToShop() {
               "
             >
 
-              <span
+              {/* <span
                 className="
                   w-11
                   h-11
@@ -435,7 +435,7 @@ export default function WaysToShop() {
                 "
               >
                 Personal Guidance
-              </span>
+              </span> */}
 
               <h3
                 className="

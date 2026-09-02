@@ -379,7 +379,7 @@ export default function Collections() {
                   >
 
                     {/* Occasion */}
-
+{/* 
                     <div
                       className="
                         flex
@@ -411,7 +411,7 @@ export default function Collections() {
                         {c.occasion}
                       </span>
 
-                    </div>
+                    </div> */}
 
 
                     {/* Name */}
@@ -507,7 +507,7 @@ export default function Collections() {
             BOTTOM LINK
         ====================================================== */}
 
-        <Reveal
+        {/* <Reveal
           delay={0.35}
           className="flex justify-center mt-10"
         >
@@ -534,7 +534,7 @@ export default function Collections() {
             <ArrowRight className="w-4 h-4" />
           </Link>
 
-        </Reveal>
+        </Reveal> */}
 
       </div>
     </section>

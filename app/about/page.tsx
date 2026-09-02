@@ -167,24 +167,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section">
-        <Reveal className="container-lg text-center">
-          <span className="eyebrow">SUNRISE Diamonds &amp; Jewels Pvt. Ltd.</span>
-          <h2 className="mt-3 font-display text-3xl md:text-[2.8rem] text-maroon-deep leading-tight">
-            This is not just luxury.
-            <br />
-            This is luxury, reimagined. 💎
-          </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-sm md:text-base leading-relaxed text-ink-soft">
-            Designed for a generation that believes brilliance should be as thoughtful as it is beautiful, Sunrise stands for timeless beauty, advanced origin, and a more conscious way to celebrate life&apos;s most meaningful moments.
-          </p>
-          <div className="mt-8 flex justify-center">
-            <Link href="/book-us" className="btn-primary">
-              Start Your Story
-            </Link>
-          </div>
-        </Reveal>
-      </section>
     </>
   );
 }

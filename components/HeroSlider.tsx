@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 const slides = [
   {
-    desktop: "/images/sliders/banner002.png",
-    mobile: "/images/sliders/banner002.png",
+    desktop: "/images/sliders/desktop.jpeg",
+    mobile: "/images/sliders/Mobile.jpeg",
 
     desktopAlt: "Luxury diamond jewellery collection",
     mobileAlt: "Luxury diamond jewellery",
@@ -106,7 +106,7 @@ export default function HeroSlider() {
                 <div
                   className="
                     relative
-                    aspect-[16/9]
+                    aspect-[3/4]
                     w-full
                     overflow-hidden
                     rounded-[22px]
@@ -130,12 +130,17 @@ export default function HeroSlider() {
                     className="absolute inset-0 h-full w-full"
                   >
 
-                    <img
-                      src={slide.desktop}
-                      alt={slide.desktopAlt}
-                      className="h-full w-full object-center"
-                      style={{ objectFit: "cover" }}
-                    />
+                    <picture className="absolute inset-0 block h-full w-full">
+                      <source
+                        media="(max-width: 639px)"
+                        srcSet={slide.mobile}
+                      />
+                      <img
+                        src={slide.desktop}
+                        alt={slide.desktopAlt}
+                        className="block h-full w-full object-contain object-center sm:object-cover"
+                      />
+                    </picture>
 
                   </motion.div>
 

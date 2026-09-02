@@ -24,7 +24,7 @@ export default function Header() {
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center shrink-0 overflow-visible justify-start -ml-1 md:ml-0"
+          className="flex items-center shrink-0 overflow-visible justify-start -ml-6 md:ml-0"
           onClick={() => setOpen(false)}
         >
           <span className="relative block h-[60px] w-[145px] sm:h-[82px] sm:w-[220px] md:h-[100px] md:w-[300px]">

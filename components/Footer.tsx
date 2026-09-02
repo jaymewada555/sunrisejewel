@@ -105,9 +105,8 @@ export default function Footer() {
 
         <div className="my-10 h-px w-full bg-gradient-to-r from-transparent via-[#d7b77a]/90 to-transparent" />
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-cream/55">
+        <div className="flex justify-center text-center text-xs text-cream/55">
           <p>© {new Date().getFullYear()} Sunrise Diamond &amp; Jewels Pvt Ltd. All rights reserved.</p>
-          <p className="tracking-wide">Crafted by <a href="https://www.roofze.com/" target="_blank" rel="noopener noreferrer" className="hover:text-cream transition-colors"> Roofze Digital Hub</a></p>
         </div>
       </div>
     </footer>

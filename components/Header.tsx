@@ -19,20 +19,20 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-line">
 
       {/* Main Header */}
-      <div className="container-lg flex items-center justify-between py-[10px]">
+      <div className="container-lg flex items-center justify-between gap-3 py-[10px]">
 
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center shrink-0 overflow-visible"
+          className="flex items-center shrink-0 overflow-visible justify-start"
           onClick={() => setOpen(false)}
         >
-          <span className="relative block h-[70px] w-[200px] sm:h-[82px] sm:w-[240px] md:h-[100px] md:w-[300px]">
+          <span className="relative block h-[70px] w-[180px] sm:h-[82px] sm:w-[220px] md:h-[100px] md:w-[300px]">
             <Image
               src="/images/logo-transparent.png"
               alt="Sunrise Diamond & Jewels"
               fill
-              sizes="(max-width: 767px) 200px, 300px"
+              sizes="(max-width: 767px) 180px, 300px"
               className="object-contain"
               priority
             />
@@ -75,7 +75,7 @@ export default function Header() {
         {/* Mobile Menu Button */}
         <button
           type="button"
-          className="md:hidden p-2 text-maroon-deep"
+          className="md:hidden ml-auto flex items-center justify-center p-2 text-maroon-deep"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
           aria-expanded={open}

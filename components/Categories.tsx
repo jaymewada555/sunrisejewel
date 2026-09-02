@@ -307,7 +307,7 @@ export default function Categories() {
                           "
                         >
 
-                          <div className="flex items-center gap-2 mb-2">
+                          {/* <div className="flex items-center gap-2 mb-2">
 
                             <span
                               className="
@@ -332,7 +332,7 @@ export default function Categories() {
                               Collection
                             </span>
 
-                          </div>
+                          </div> */}
 
                           <h3
                             className="

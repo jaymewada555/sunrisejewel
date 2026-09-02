@@ -45,7 +45,7 @@ export default function CustomersSlider() {
       <div className="container-lg relative">
         <Reveal className="text-center ">
           <span className="eyebrow text-gold-light">Real Stories</span>
-          <h2 className="font-display text-3xl md:text-[2.4rem] text-cream mt-3 mb-5">
+          <h2 className="font-display text-3xl md:text-[2.4rem] text-cream mt-1 mb-5">
             Hear From Them
           </h2>
         </Reveal>

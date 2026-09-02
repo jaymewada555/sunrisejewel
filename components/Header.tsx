@@ -19,20 +19,20 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-line">
 
       {/* Main Header */}
-      <div className="container-lg flex items-center justify-between gap-3 py-[10px]">
+      <div className="container-lg flex items-center justify-between gap-2 py-[10px] md:gap-3">
 
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center shrink-0 overflow-visible justify-start"
+          className="flex items-center shrink-0 overflow-visible justify-start pl-0 md:pl-0"
           onClick={() => setOpen(false)}
         >
-          <span className="relative block h-[70px] w-[180px] sm:h-[82px] sm:w-[220px] md:h-[100px] md:w-[300px]">
+          <span className="relative block h-[68px] w-[160px] sm:h-[82px] sm:w-[220px] md:h-[100px] md:w-[300px]">
             <Image
               src="/images/logo-transparent.png"
               alt="Sunrise Diamond & Jewels"
               fill
-              sizes="(max-width: 767px) 180px, 300px"
+              sizes="(max-width: 767px) 160px, 300px"
               className="object-contain"
               priority
             />

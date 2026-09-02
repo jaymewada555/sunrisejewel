@@ -91,8 +91,8 @@ export default function HeroSlider() {
                   relative
                   mx-auto
                   max-w-[1700px]
-                  px-3
-                  py-3
+                  px-0
+                  py-0
                   sm:px-6
                   lg:px-10
                   lg:py-7
@@ -106,7 +106,7 @@ export default function HeroSlider() {
                 <div
                   className="
                     relative
-                    aspect-[3/4]
+                    aspect-[9/16]
                     w-full
                     overflow-hidden
                     rounded-[22px]

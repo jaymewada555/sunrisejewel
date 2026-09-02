@@ -64,7 +64,7 @@ export default function Footer() {
             <h4 className="eyebrow mb-5">Explore</h4>
             <ul className="space-y-3 text-sm text-cream/70">
               <li><Link href="/" className="hover:text-cream transition-colors">Home</Link></li>
-              <li><Link href="/products" className="hover:text-cream transition-colors">Products</Link></li>
+              <li><Link href="/products/coming-soon" className="hover:text-cream transition-colors">Products</Link></li>
               <li><Link href="/about" className="hover:text-cream transition-colors">About Us</Link></li>
               <li><Link href="/book-us" className="hover:text-cream transition-colors">Book Us</Link></li>
             </ul>
@@ -73,10 +73,10 @@ export default function Footer() {
           <div>
             <h4 className="eyebrow mb-5">Categories</h4>
             <ul className="space-y-3 text-sm text-cream/70">
-              <li><Link href="/products?category=Rings" className="hover:text-cream transition-colors">Rings</Link></li>
-              <li><Link href="/products?category=Necklaces" className="hover:text-cream transition-colors">Necklaces</Link></li>
-              <li><Link href="/products?category=Earrings" className="hover:text-cream transition-colors">Earrings</Link></li>
-              <li><Link href="/products?category=Bracelets" className="hover:text-cream transition-colors">Bracelets</Link></li>
+              <li><Link href="/products/coming-soon" className="hover:text-cream transition-colors">Rings</Link></li>
+              <li><Link href="/products/coming-soon" className="hover:text-cream transition-colors">Necklaces</Link></li>
+              <li><Link href="/products/coming-soon" className="hover:text-cream transition-colors">Earrings</Link></li>
+              <li><Link href="/products/coming-soon" className="hover:text-cream transition-colors">Bracelets</Link></li>
             </ul>
           </div>
 

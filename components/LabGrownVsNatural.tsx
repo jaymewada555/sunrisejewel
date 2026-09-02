@@ -207,7 +207,7 @@ export default function LabGrownVsNatural() {
               </div>
             </div>
 
-            <div className="relative z-10 mt-7 flex justify-center">
+            {/* <div className="relative z-10 mt-7 flex justify-center">
               <div className="relative h-[170px] w-[290px] sm:h-[200px] sm:w-[360px] lg:h-[220px] lg:w-[390px]">
                 <div className="absolute inset-x-[12%] bottom-0 h-[20%] rounded-full bg-[rgba(128,96,86,0.16)] blur-[24px]" />
                 <img
@@ -216,7 +216,7 @@ export default function LabGrownVsNatural() {
                   className="relative h-full w-full object-contain drop-shadow-[0_22px_30px_rgba(70,46,35,0.18)] ml-[18%] sm:ml-[18%] lg:ml-[18%]"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="relative overflow-hidden rounded-[30px] border border-[#cbd5e1] bg-[linear-gradient(135deg,#ddeaf6_0%,#edf3fb_30%,#e9eef4_100%)] px-5 pb-5 pt-7 shadow-[0_18px_40px_rgba(91,67,38,0.08)] sm:px-8 sm:pb-7 lg:px-10">
@@ -262,7 +262,7 @@ export default function LabGrownVsNatural() {
               </div>
             </div>
 
-            <div className="relative z-10 mt-7 flex justify-center">
+            {/* <div className="relative z-10 mt-7 flex justify-center">
               <div className="relative h-[170px] w-[290px] sm:h-[200px] sm:w-[360px] lg:h-[220px] lg:w-[390px]">
                 <div className="absolute inset-x-[12%] bottom-0 h-[20%] rounded-full bg-[rgba(61,81,95,0.16)] blur-[24px]" />
                 <img
@@ -271,7 +271,7 @@ export default function LabGrownVsNatural() {
                   className="relative h-full w-full object-contain drop-shadow-[0_22px_30px_rgba(36,52,68,0.18)] ml-[18%] sm:ml-[18%] lg:ml-[18%]"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

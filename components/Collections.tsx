@@ -38,6 +38,46 @@ const collections = [
     image: "/images/aboutus/round.png",
     position: "center",
   },
+  {
+    name: "Princess Cut",
+    occasion: "Diamond Type",
+    description:
+      "A bold, brilliant shape with modern sparkle and crisp, geometric charm.",
+    image: "/images/aboutus/princess.png",
+    position: "center",
+  },
+  {
+    name: "Cushion Cut",
+    occasion: "Diamond Type",
+    description:
+      "A softly rounded silhouette with classic romance and a lavish glow.",
+    image: "/images/aboutus/cushion.png",
+    position: "center",
+  },
+  {
+    name: "Asscher Cut",
+    occasion: "Diamond Type",
+    description:
+      "A vintage-inspired square cut with elegant step facets and timeless depth.",
+    image: "/images/aboutus/asscher.png",
+    position: "center",
+  },
+  {
+    name: "Oval Cut",
+    occasion: "Diamond Type",
+    description:
+      "An elongated silhouette that amplifies brilliance and creates an airy, graceful look.",
+    image: "/images/aboutus/oval.png",
+    position: "center",
+  },
+  {
+    name: "Marquise Cut",
+    occasion: "Diamond Type",
+    description:
+      "A sculpted, elongated form that maximizes sparkle and creates a regal statement.",
+    image: "/images/aboutus/marquise.png",
+    position: "center",
+  },
 ];
 
 export default function Collections() {
@@ -144,17 +184,20 @@ export default function Collections() {
             COLLECTION GRID
         ====================================================== */}
 
-        <div className="overflow-hidden" ref={emblaRef}>
+        <div
+          className="
+            embla
+            cursor-grab
+            active:cursor-grabbing
+          "
+          ref={emblaRef}>
+
           <div
             className="
-              flex
+              embla__container
               -ml-3
               md:-ml-4
-              lg:grid
-              lg:grid-cols-4
-              lg:gap-6
-            "
-          >
+            ">
 
           {collections.map((c, i) => (
 
@@ -162,14 +205,15 @@ export default function Collections() {
               key={c.name}
               delay={i * 0.08}
               className="
+                embla__slide
                 min-w-0
                 pl-3
+                md:pl-4
                 flex-[0_0_82%]
                 sm:flex-[0_0_50%]
-                md:pl-4
-                lg:flex-none
-                lg:min-w-0
-                lg:pl-0
+                md:flex-[0_0_44%]
+                lg:flex-[0_0_30%]
+                xl:flex-[0_0_22%]
               "
             >
 

@@ -20,6 +20,11 @@ export default function ProductsPage() {
               Every piece is handcrafted with lab-grown and natural diamonds, designed to feel personal,
               premium, and effortless to wear.
             </p>
+            <div className="mt-6 flex justify-center">
+              <a href="/products/coming-soon" className="btn-primary">
+                View upcoming collection
+              </a>
+            </div>
           </Reveal>
         </div>
       </section>

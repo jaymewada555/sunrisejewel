@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import useEmblaCarousel from "embla-carousel-react";
 import { categories } from "@/lib/data";
 import Reveal from "@/components/Reveal";
@@ -80,7 +79,7 @@ export default function Categories() {
               mt-3
             "
           >
-            Shop by Category
+            Browse our collection
           </h2>
 
           <p
@@ -168,14 +167,11 @@ export default function Categories() {
 
                   <Reveal delay={i * 0.05}>
 
-                    <Link
-                      href={`/products?category=${encodeURIComponent(
-                        cat.name
-                      )}`}
+                    <div
                       className="
                         group
-                        block
                         relative
+                        block
                       "
                     >
 
@@ -401,7 +397,7 @@ export default function Categories() {
 
                       </div> */}
 
-                    </Link>
+                    </div>
 
                   </Reveal>
 

@@ -106,14 +106,15 @@ export default function HeroSlider() {
                 <div
                   className="
                     relative
-                    h-[420px]
+                    aspect-[16/9]
+                    w-full
                     overflow-hidden
                     rounded-[22px]
                     bg-[#ded1bd]
                     shadow-[0_30px_90px_rgba(57,39,25,0.16)]
-                    sm:h-[500px]
+                    sm:aspect-[18/9]
                     sm:rounded-[28px]
-                    lg:h-[650px]
+                    lg:aspect-[22/10]
                   "
                 >
 
@@ -123,30 +124,17 @@ export default function HeroSlider() {
 
                   <motion.div
                     key={`image-${index}-${selected}`}
-                    initial={{
-                      opacity: 0,
-                      scale: 1.06,
-                    }}
-                    animate={{
-                      opacity: 1,
-                      scale: 1,
-                    }}
-                    transition={{
-                      duration: 1.1,
-                      ease: "easeOut",
-                    }}
-                    className="
-                      absolute
-                      inset-0
-                      h-full
-                      w-full
-                    "
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    className="absolute inset-0 h-full w-full"
                   >
 
                     <img
                       src={slide.desktop}
                       alt={slide.desktopAlt}
-                      className="h-full w-full object-cover object-center"
+                      className="h-full w-full object-center"
+                      style={{ objectFit: "cover" }}
                     />
 
                   </motion.div>

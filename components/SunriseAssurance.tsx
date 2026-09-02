@@ -30,6 +30,19 @@ const assurances = [
   },
 ];
 
+const certificates = [
+  {
+    src: "/images/certificates/sgl.png",
+    title: "SGL Certified",
+    description: "Trusted gemological certification for diamond authenticity and quality.",
+  },
+  {
+    src: "/images/certificates/igi.png",
+    title: "IGI Certified",
+    description: "International grading assurance for precision, cut and brilliance.",
+  },
+];
+
 export default function SunriseAssurance() {
   return (
     <section className="relative bg-[#faf8f4] px-4 py-12 sm:px-6 lg:px-10 lg:py-16">
@@ -255,6 +268,40 @@ export default function SunriseAssurance() {
 
           </div>
 
+        </div>
+
+        {/* Certificates */}
+        <div className="mx-auto mt-8 max-w-5xl">
+          <div className="grid gap-6 md:grid-cols-2">
+            {certificates.map((certificate) => (
+              <div
+                key={certificate.title}
+                className="group rounded-[24px] border border-[#e7d8be] bg-[#f9f5f0] p-5 shadow-[0_12px_28px_rgba(72,52,29,0.04)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_35px_rgba(72,52,29,0.08)]"
+              >
+                <div className="flex flex-col items-center justify-center gap-4 text-center sm:flex-row sm:text-left">
+                  <div className="relative flex h-[120px] w-[120px] items-center justify-center overflow-hidden rounded-full border border-[#d9c8ad] bg-white shadow-inner shadow-[#f2e8d7] sm:h-[130px] sm:w-[130px]">
+                    <img
+                      src={certificate.src}
+                      alt={certificate.title}
+                      className="h-full w-full object-contain p-3"
+                    />
+                  </div>
+
+                  <div className="flex-1">
+                    <p className="mb-1 text-[10px] font-semibold uppercase tracking-[0.28em] text-[#b18a52]">
+                      Certified partner
+                    </p>
+                    <h3 className="font-serif text-2xl font-medium text-[#2f241f]">
+                      {certificate.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-6 text-[#6d5b4f]">
+                      {certificate.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
       </div>

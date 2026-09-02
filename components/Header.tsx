@@ -24,15 +24,15 @@ export default function Header() {
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center shrink-0"
+          className="flex items-center shrink-0 overflow-visible"
           onClick={() => setOpen(false)}
         >
-          <span className="relative block h-[120px] w-[360px] md:h-[100px] md:w-[300px]">
+          <span className="relative block h-[70px] w-[200px] sm:h-[82px] sm:w-[240px] md:h-[100px] md:w-[300px]">
             <Image
               src="/images/logo-transparent.png"
               alt="Sunrise Diamond & Jewels"
               fill
-              sizes="(max-width: 767px) 360px, 300px"
+              sizes="(max-width: 767px) 200px, 300px"
               className="object-contain"
               priority
             />

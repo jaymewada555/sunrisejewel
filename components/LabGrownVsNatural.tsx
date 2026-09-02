@@ -169,7 +169,7 @@ export default function LabGrownVsNatural() {
 
             <div className="relative z-10">
               <div className="mb-6 flex items-center justify-center gap-3 text-[#b36d5e]">
-                <Gem className="h-4 w-4" strokeWidth={1.8} />
+                <Atom className="h-4 w-4" strokeWidth={1.8} />
                 <span className="text-[10px] font-medium uppercase tracking-[0.38em] text-[#b36d5e] sm:text-[11px]">
                   Lab-grown diamonds
                 </span>
@@ -224,7 +224,7 @@ export default function LabGrownVsNatural() {
 
             <div className="relative z-10">
               <div className="mb-6 flex items-center justify-center gap-3 text-[#5d7d90]">
-                <Sparkles className="h-4 w-4" strokeWidth={1.8} />
+                <MountainSnow className="h-4 w-4" strokeWidth={1.8} />
                 <span className="text-[10px] font-medium uppercase tracking-[0.38em] text-[#5d7d90] sm:text-[11px]">
                   Natural diamonds
                 </span>

@@ -8,10 +8,10 @@ const categoryImages: Record<string, string> = {
   Rings: "/images/products/Creatives/1 (32).jpg",
   Earrings: "/images/products/Creatives/EER6666 (15).png",
   Pendants: "/images/products/Creatives/PD (53).png",
-  Necklace : "/images/products/Creatives/PD (29).png",
   "Chain Pendant": "/images/products/Creatives/PD (28).png",
-  "Nosepins": "/images/products/Creatives/PD (38).png",
+  Nosepins: "/images/products/Creatives/PD (38).png",
   Bracelets: "/images/products/Creatives/PD (35).png",
+  Necklace : "/images/products/Creatives/PD (39).png",
 };
 
 const fallbackImage = "/images/products/Creatives/1 (32).jpg";

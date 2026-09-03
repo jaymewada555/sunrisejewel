@@ -16,12 +16,11 @@ const slides = [
   // {
   //   desktop: "/images/products/cascade-choker-necklace.jpg",
   //   mobile: "/images/products/cascade-choker-necklace.jpg",
-
   //   desktopAlt: "Elegant gold and diamond jewellery",
-  //   mobileAlt: "Elegant diamond ring",
+  //   mobileAlt: "ElSegant diamond ring",
   // },
 
-  // {
+  // {S
   //   desktop: "/images/products/featherline-tennis-bracelet.jpg",
   //   mobile: "/images/products/featherline-tennis-bracelet.jpg",
 

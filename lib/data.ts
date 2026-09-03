@@ -55,10 +55,7 @@ export const categories: { name: Category; image: string }[] = [
     name: "Chain Pendant",
     image: "/images/products/Creatives/PD (28).png",
   },
-  {
-    name: "Necklace",
-    image: "/images/products/Creatives/PD (54).png",
-  },
+
   {
     name: "Bracelets",
     image: "/images/products/Creatives/PD (35).png",
@@ -66,6 +63,10 @@ export const categories: { name: Category; image: string }[] = [
   {
     name: "Nosepins",
     image: "/images/products/Creatives/PD (38).png",
+  },
+    {
+    name: "Necklace",
+    image: "/images/products/Creatives/PD (54).png",
   },
 ];
 

@@ -106,7 +106,7 @@ export default function HeroSlider() {
                 <div
                   className="
                     relative
-                    aspect-[5/6]
+                    aspect-[4/5]
                     mx-[5px]
                     w-[calc(100%_-_10px)]
                     overflow-hidden

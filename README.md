@@ -32,9 +32,10 @@ to the Plesk document root (`httpdocs`). The build automatically copies
 included `web.config` maps clean routes such as `/about/` to their generated
 `index.html` files.
 
-For Plesk, do not configure this site as a Node.js application and do not use
-`app.js` as an iisnode startup file. The site is exported as static HTML, CSS,
-JavaScript, and image assets.
+For Plesk, the preferred setup is a static website with the document root set
+to `out`. Do not configure iisnode for this setup. `app.js` is included only as
+a compatibility fallback for hosts that force an existing Node.js/iisnode
+binding; it serves the already-built `out` folder and does not run `next start`.
 
 ## Git deployment on Plesk Windows
 
@@ -62,8 +63,8 @@ files are not the deployable site.
 ## Environment and ports
 
 This application currently has no secrets or runtime environment variables.
-`.env.example` documents optional `PORT` and `HOSTNAME` values for the
-Node.js/SSR fallback in `app.js`; it is not required for the static IIS build.
+`.env.example` documents the optional `PORT` value for the Node.js/iisnode
+compatibility fallback in `app.js`; it is not required for the static IIS build.
 For static hosting, configure the public HTTP/HTTPS bindings in Plesk. IIS
 `web.config` does not select a public port.
 

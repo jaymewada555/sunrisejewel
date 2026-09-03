@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const slides = [
   {
     desktop: "/images/sliders/desktop.jpeg",
-    mobile: "/images/sliders/Mobile.jpeg",
+    mobile: "/images/sliders/Mobile.png",
 
     desktopAlt: "Luxury diamond jewellery collection",
     mobileAlt: "Luxury diamond jewellery",
@@ -107,11 +107,14 @@ export default function HeroSlider() {
                   className="
                     relative
                     aspect-[9/16]
-                    w-full
+                    mx-[5px]
+                    w-[calc(100%_-_10px)]
                     overflow-hidden
                     rounded-[22px]
                     bg-[#ded1bd]
                     shadow-[0_30px_90px_rgba(57,39,25,0.16)]
+                    sm:mx-0
+                    sm:w-full
                     sm:aspect-[18/9]
                     sm:rounded-[28px]
                     lg:aspect-[22/10]
@@ -138,7 +141,7 @@ export default function HeroSlider() {
                       <img
                         src={slide.desktop}
                         alt={slide.desktopAlt}
-                        className="block h-full w-full object-contain object-center sm:object-cover"
+                        className="block h-full w-full object-cover object-center"
                       />
                     </picture>
 

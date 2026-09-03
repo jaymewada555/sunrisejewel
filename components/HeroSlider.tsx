@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const slides = [
   {
     desktop: "/images/sliders/desktop.jpeg",
-    mobile: "/images/sliders/Mobile.png",
+    mobile: "/images/sliders/mobile.png",
 
     desktopAlt: "Luxury diamond jewellery collection",
     mobileAlt: "Luxury diamond jewellery",

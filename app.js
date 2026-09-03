@@ -1,6 +1,10 @@
-// app.js
+const path = require("node:path");
+const { spawn } = require("node:child_process");
+
 const isWindows = process.platform === "win32";
 const nextCommand = isWindows ? "next.cmd" : "next";
+const port = process.env.PORT || "3000";
+const hostname = process.env.HOSTNAME || "127.0.0.1";
 
 const nextBin = path.join(
   __dirname,
@@ -9,7 +13,7 @@ const nextBin = path.join(
   nextCommand
 );
 
-const server = spawn(nextBin, ["start"], {
+const server = spawn(nextBin, ["start", "-p", port, "-H", hostname], {
   cwd: __dirname,
   env: {
     ...process.env,

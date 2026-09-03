@@ -23,8 +23,49 @@ To build for production:
 
 ```bash
 npm run build
-npm run start
 ```
+
+The production build is a static export written to `out/`. It can be hosted on
+Windows Plesk/IIS without Node.js or iisnode. Upload the contents of `out/`
+to the Plesk document root (`httpdocs`). The build automatically copies
+`web.config` into `out/`. Ensure the IIS URL Rewrite feature is enabled; the
+included `web.config` maps clean routes such as `/about/` to their generated
+`index.html` files.
+
+For Plesk, do not configure this site as a Node.js application and do not use
+`app.js` as an iisnode startup file. The site is exported as static HTML, CSS,
+JavaScript, and image assets.
+
+## Git deployment on Plesk Windows
+
+Configure the domain's document root as the repository's `out` folder, for
+example `httpdocs\out`. Then run these commands from the repository folder
+using the branch you want to publish:
+
+The Plesk server must have Node.js `20.9.0` or newer available to run the
+build. Node.js is not needed to serve the finished static files.
+
+```bat
+git fetch origin
+git checkout YOUR_BRANCH
+git pull --ff-only origin YOUR_BRANCH
+npm ci
+npm run build
+```
+
+The site is ready when `out\index.html` and `out\web.config` exist. If the
+Plesk plan requires the document root to remain `httpdocs`, copy the contents
+of `out\` into `httpdocs\` after `npm run build`, including `web.config`.
+Do not upload the repository root as the website root, because the Next source
+files are not the deployable site.
+
+## Environment and ports
+
+This application currently has no secrets or runtime environment variables.
+`.env.example` documents optional `PORT` and `HOSTNAME` values for the
+Node.js/SSR fallback in `app.js`; it is not required for the static IIS build.
+For static hosting, configure the public HTTP/HTTPS bindings in Plesk. IIS
+`web.config` does not select a public port.
 
 ## What's new in this version
 

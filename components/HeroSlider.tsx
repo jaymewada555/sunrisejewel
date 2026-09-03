@@ -106,7 +106,7 @@ export default function HeroSlider() {
                 <div
                   className="
                     relative
-                    aspect-[4/5]
+                    aspect-[5/6]
                     mx-[5px]
                     w-[calc(100%_-_10px)]
                     overflow-hidden
@@ -153,50 +153,6 @@ export default function HeroSlider() {
           ))}
 
         </div>
-      </div>
-
-      {/* =====================================================
-          SLIDE INDICATORS
-      ====================================================== */}
-
-      <div
-        className="
-          absolute
-          bottom-10
-          left-1/2
-          z-30
-          flex
-          -translate-x-1/2
-          items-center
-          gap-2
-        "
-      >
-
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            type="button"
-            aria-label={`Go to slide ${index + 1}`}
-            onClick={() => emblaApi?.scrollTo(index)}
-            className="group p-1"
-          >
-            <span
-              className={`
-                block
-                h-[2px]
-                rounded-full
-                transition-all
-                duration-500
-                ${
-                  selected === index
-                    ? "w-10 bg-white"
-                    : "w-3 bg-white/50"
-                }
-              `}
-            />
-          </button>
-        ))}
-
       </div>
 
     </section>
